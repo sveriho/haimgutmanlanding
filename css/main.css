@@ -1,0 +1,151 @@
+/* Start Summary section */
+
+.summary {
+  padding-top: 100px; /* To compensate fixed header height */
+  padding-bottom: 25px;
+  min-height: 600px;
+  background: url('../assets/images/summary-bg.jpg') no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.summary__photo {
+  height: 643px;
+}
+
+.summary__photo img {
+  height: 643px;
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+}
+
+.summary__photo-mobile {
+  display: none;
+}
+
+.summary__content {
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.summary__content-degree {
+  font-size: 32px;
+  line-height: 140%;
+}
+
+.summary__content-name {
+  padding: 16px 0;
+  font-size: 85px;
+  line-height: 120%;
+}
+
+.summary__content-description {
+  padding-bottom: 32px;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about > li:not(:first-child) {
+  padding: 0 24px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.about__label {
+  font-size: 16px;
+  line-height: 160%;
+  opacity: 0.5;
+}
+
+.about__value {
+  font-family: 'Prata';
+  font-size: 28px;
+  line-height: 160%;
+}
+
+.flex-empty {
+  height: 100px;
+}
+
+/* End Summary section */
+
+@media only screen and (max-width: 991px) {
+  .summary__content {
+    width: 400px;
+    justify-content: center;
+  }
+
+  .summary__content-degree {
+    font-size: 32px;
+    line-height: 140%;
+  }
+  
+  .summary__content-name {
+    font-size: 52px;
+    line-height: 120%;
+  }
+
+  .summary__photo img {
+    right: -100px;
+  }
+
+  .about {
+    display: none;
+  }
+
+  .flex-empty {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .summary__photo img {
+    right: -150px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .summary {
+    background: var(--color-summary-bg);
+  }
+
+  .summary__content {
+    width: unset;
+  }
+
+  .summary__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .summary__photo {
+    display: none;
+  }
+
+  .summary__photo-mobile {
+    display: block;
+  }
+
+  .summary__content-degree {
+    font-size: 24px;
+    line-height: 140%;
+  }
+  
+  .summary__content-name {
+    font-size: 42px;
+    line-height: 120%;
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+}
