@@ -1,3 +1,75 @@
+/* Start Header section */
+
+.header {
+  width: 1164px; /* Temporary */
+  height: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 23px;
+}
+
+.header__nav-link {
+  color: var(--color-black);
+  opacity: 0.7;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header__socials {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__socials-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__socials-icon.whatsapp {
+  background-image: url('../assets/images/svg/WhatsApp.svg');
+}
+
+.header__socials-icon.telegram {
+  background-image: url('../assets/images/svg/Telegram.svg');
+}
+
+.header__socials-icon.viber {
+  background-image: url('../assets/images/svg/Viber.svg');
+}
+
+.lang-selector {
+  padding: 10px 14px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+}
+
+/* End Header section */
+
 /* Start Summary section */
 
 .summary {
@@ -75,8 +147,6 @@
   height: 100px;
 }
 
-/* End Summary section */
-
 @media only screen and (max-width: 991px) {
   .summary__content {
     width: 400px;
@@ -149,3 +219,5 @@
     flex-direction: column;
   }
 }
+
+/* End Summary section */
