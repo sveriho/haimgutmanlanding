@@ -15,10 +15,16 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header container">
+    <div class="header__burger">
+      <button class="header__burger-btn" type="button"></button>
+    </div>
     <img class="header__logo" src="./assets/images/svg/logo.svg" alt="Logo" />
     <nav class="header__nav">
       <ul class="header__nav-list">
+        <li class="header__nav-listitem title">
+          <span class="font-prata">Меню</span>
+        </li>
         <li class="header__nav-listitem">
           <a class="header__nav-link" href="#about">О профессоре</a>
         </li>
@@ -107,6 +113,9 @@
       </div>
     </section>
   </main>
+
+  <div class="backdrop"></div>
+  <script src="./js/nav-burger.js"></script>
 </body>
 
 </html>
