@@ -1,121 +1,296 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/main.css">
+    <title>Хаим Гутман</title>
+  </head>
 
-  <title>Хаим Гутман</title>
-</head>
-
-<body>
-  <header class="header container">
-    <div class="header__burger">
-      <button class="header__burger-btn" type="button"></button>
-    </div>
-    <img class="header__logo" src="./assets/images/svg/logo.svg" alt="Logo" />
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-listitem title">
-          <span class="font-prata">Меню</span>
+  <body>
+    <header class="header container">
+      <div class="header__burger">
+        <button class="header__burger-btn" type="button"></button>
+      </div>
+      <img class="header__logo" src="./assets/images/svg/logo.svg" alt="Logo" />
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-listitem title">
+            <span class="font-prata">Меню</span>
+          </li>
+          <li class="header__nav-listitem">
+            <a class="header__nav-link" href="#about">О профессоре</a>
+          </li>
+          <li class="header__nav-listitem">
+            <a class="header__nav-link" href="#services">Услуги</a>
+          </li>
+          <li class="header__nav-listitem">
+            <a class="header__nav-link" href="#patients"
+              >Иностранные пациенты</a
+            >
+          </li>
+          <li class="header__nav-listitem">
+            <a class="header__nav-link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="header__nav-listitem">
+            <a class="header__nav-link" href="#partners">Партнеры</a>
+          </li>
+          <li class="header__nav-listitem">
+            <a class="header__nav-link" href="#certificates">Сертификаты</a>
+          </li>
+          <li class="header__nav-listitem">
+            <a class="header__nav-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__socials">
+        <li>
+          <a class="header__socials-icon whatsapp" href="#"></a>
         </li>
-        <li class="header__nav-listitem">
-          <a class="header__nav-link" href="#about">О профессоре</a>
+        <li>
+          <a class="header__socials-icon telegram" href="#"></a>
         </li>
-        <li class="header__nav-listitem">
-          <a class="header__nav-link" href="#services">Услуги</a>
+        <li>
+          <a class="header__socials-icon viber" href="#"></a>
         </li>
-        <li class="header__nav-listitem">
-          <a class="header__nav-link" href="#patients">Иностранные пациенты</a>
-        </li>
-        <li class="header__nav-listitem">
-          <a class="header__nav-link" href="#reviews">Отзывы</a>
-        </li>
-        <li class="header__nav-listitem">
-          <a class="header__nav-link" href="#partners">Партнеры</a>
-        </li>
-        <li class="header__nav-listitem">
-          <a class="header__nav-link" href="#certificates">Сертификаты</a>
-        </li>
-        <li class="header__nav-listitem">
-          <a class="header__nav-link" href="#faq">FAQ</a>
+        <li>
+          <select class="lang-selector">
+            <option value="1">RU</option>
+            <option value="2">ENG</option>
+          </select>
         </li>
       </ul>
-    </nav>
-    <ul class="header__socials">
-      <li>
-        <a class="header__socials-icon whatsapp" href="#"></a>
-      </li>
-      <li>
-        <a class="header__socials-icon telegram" href="#"></a>
-      </li>
-      <li>
-        <a class="header__socials-icon viber" href="#"></a>
-      </li>
-      <li>
-        <select class="lang-selector">
-          <option value="1">RU</option>
-          <option value="2">ENG</option>
-        </select>
-      </li>
-    </ul>
-  </header>
-  <main>
-    <section id="about" class="summary">
-      <div class="container summary__container flex relative">
-        <div class="summary__content">
-          <div class="flex-empty"></div>
-          <div class="common">
-            <p class="summary__content-degree font-prata">Профессор</p>
-            <h1 class="summary__content-name font-prata">Хаим Гутман</h1>
-            <p class="summary__content-description">
-              Известный онколог, активно участвует в работе медицинских союзов,
-              включая Союз врачей Израиля, Израильскую ассоциацию хирургов,
-              Израильское общество хирургической онкологии, Европейскую
-              ассоциацию онкохирургии, Общество онкохирургии США.
-            </p>
-            <div class="btn-group">
-              <button class="btn btn-primary" type="button">
-                Записаться на Консультацию
-              </button>
-              <button class="btn btn-secondary" type="button">
-                О профессоре
+    </header>
+    <main>
+      <section id="about" class="summary">
+        <div class="container summary__container flex relative">
+          <div class="summary__content">
+            <div class="flex-empty"></div>
+            <div class="common">
+              <p class="summary__content-degree font-prata">Профессор</p>
+              <h1 class="summary__content-name font-prata">Хаим Гутман</h1>
+              <p class="summary__content-description">
+                Известный онколог, активно участвует в работе медицинских
+                союзов, включая Союз врачей Израиля, Израильскую ассоциацию
+                хирургов, Израильское общество хирургической онкологии,
+                Европейскую ассоциацию онкохирургии, Общество онкохирургии США.
+              </p>
+              <div class="btn-group">
+                <button class="btn btn-primary" type="button">
+                  Записаться на Консультацию
+                </button>
+                <button class="btn btn-secondary" type="button">
+                  О профессоре
+                </button>
+              </div>
+            </div>
+            <ul class="about">
+              <li>
+                <p class="about__label">Опыт</p>
+                <p class="about__value">40 лет</p>
+              </li>
+              <li>
+                <p class="about__label">Пациентов</p>
+                <p class="about__value">18 000+</p>
+              </li>
+              <li>
+                <p class="about__label">Сертификатов</p>
+                <p class="about__value">35+</p>
+              </li>
+            </ul>
+          </div>
+          <div class="summary__photo">
+            <img src="./assets/images/photo.png" alt="Photo" />
+          </div>
+          <div class="summary__photo-mobile">
+            <img src="./assets/images/photo-mobile.png" alt="Photo" />
+          </div>
+        </div>
+      </section>
+      <section id="medical-turism" class="four-section">
+        <div class="container">
+          <div class="four-section-position">
+            <div class="four-section-text-position">
+              <h2 class="four-section-text-info">
+                Отдел приема иностранных пациентов
+              </h2>
+              <p class="four-section-text">
+                В своей практике он применяет передовые методы диагностики,
+                современные медицинские технологии и протоколы лечения, а также
+                высококачественные хирургические инструменты и высокоэффективные
+                лекарственные препараты.
+              </p>
+            </div>
+            <div>
+              <div class="four-section-circle-line">
+                <img
+                  class="four-section-circle"
+                  src="./assets/images/svg/circle-four-section.svg"
+                  alt=""
+                />
+                <h3 class="four-section-number-text">
+                  1. Выбор лучшего медицинского учреждения
+                </h3>
+              </div>
+              <p class="four-section-main-text border-line empty">
+                Профессор Хаим Гутман сотрудничает с крупнейшими и наиболее
+                известными медицинскими клиниками в Израиле, в том числе
+                Тель-Авивский медицинский центр Ихилов (Сураски), медикал центр
+                «Герцлия», частная клиника «Рафаэль». Пациент может выбрать
+                лучшую клинику, опираясь на отзывы, рейтинги, изучив репутацию
+                мед учреждения, а также руководствуясь своим опытом и личными
+                впечатлениями. 
+              </p>
+              <div class="four-section-circle-line">
+                <img
+                  class="four-section-circle"
+                  src="./assets/images/svg/circle-four-section.svg"
+                  alt=""
+                />
+
+                <h3 class="four-section-number-text">
+                  2. Планирование и организация поездки
+                </h3>
+              </div>
+              <div class="border-line">
+                <p class="four-section-main-text">
+                  Компания берет на себя решение всех организационных вопросов:
+                </p>
+                <ul class="four-section-circle-list">
+                  <li>
+                    <img
+                      class="circle"
+                      src="./assets/images/svg/Ellipse 70.svg"
+                      alt=""
+                    />
+                    <p class="four-section-main-text">
+                      Помощь в оформлении визы и бронировании перелета.
+                    </p>
+                  </li>
+                  <li>
+                    <img
+                      class="circle"
+                      src="./assets/images/svg/Ellipse 70.svg"
+                      alt=""
+                    />
+                    <p class="four-section-main-text">
+                      Помощь в аренде жилья – бронирование отелей, поиск и
+                      аренда квартиры.
+                    </p>
+                  </li>
+                  <li>
+                    <img
+                      class="circle"
+                      src="./assets/images/svg/Ellipse 70.svg"
+                      alt=""
+                    />
+                    <p class="four-section-main-text">
+                      Трансфер – встреча в аэропорту, поездки в клинику.
+                    </p>
+                  </li>
+                  <li>
+                    <img
+                      class="circle"
+                      src="./assets/images/svg/Ellipse 70.svg"
+                      alt=""
+                    />
+                    <p class="four-section-main-text">
+                      Перевод медицинских документов.
+                    </p>
+                  </li>
+                  <li>
+                    <img
+                      class="circle"
+                      src="./assets/images/svg/Ellipse 70.svg"
+                      alt=""
+                    />
+                    <p class="four-section-main-text">
+                      Планирование консультаций, обследований, лечения.
+                    </p>
+                  </li>
+                </ul>
+                <p class="four-section-main-text empty">
+                  Мы готовы предложить вам индивидуальный пакет медицинского
+                  обслуживания, полностью соответствующий вашим личным
+                  пожеланиям и медицинским потребностям.
+                </p>
+              </div>
+              <div class="four-section-circle-line">
+                <img
+                  class="four-section-circle"
+                  src="./assets/images/svg/circle-four-section.svg"
+                  alt=""
+                />
+                <h3 class="four-section-number-text">
+                  3. Консультация по прибытии в Израиль
+                </h3>
+              </div>
+              <p class="four-section-main-text border-line empty">
+                Консультация с врачом проходит по приезду пациента в заранее
+                назначенное время. Для консультации у пациента должны быть на
+                руках анализы крови, включая определение опухолевых маркеров,
+                данные исследования гистологического материала, обзорная ПЭТ-КТ
+                или КТ трех областей, заключение от онколога (где пациент ранее
+                проходил обследование, лечение). На этом этапе происходит
+                обсуждение плана диагностики и лечения на основании имеющихся
+                результатов обследования и информации о текущем состоянии
+                пациента, его жалоб на момент обращения.
+              </p>
+              <div class="four-section-circle-line">
+                <img
+                  class="four-section-circle"
+                  src="./assets/images/svg/circle-four-section.svg"
+                  alt=""
+                />
+                <h3 class="four-section-number-text">
+                  4. Лечение и реабилитация
+                </h3>
+              </div>
+              <p class="four-section-main-text border-line empty">
+                Профессор Хаим Гутман использует ресурсы ведущих клиник для
+                диагностики, лечения и послеоперационного восстановления
+                пациента. Каждому пациенту будет обеспечен самый
+                профессиональный и качественный уход, назначен координатор,
+                который станет основным контактным лицом во время пребывания в
+                Израиле. Он будет сопровождать пациента на консультации и давать
+                качественный перевод врачу и пациенту, окажет всю необходимую
+                помощь и поддержку, будет контролировать своевременное
+                выполнение всех этапов лечения пациента и следить за соблюдением
+                его интересов.
+              </p>
+              <div class="four-section-circle-line">
+                <img
+                  class="four-section-circle"
+                  src="./assets/images/svg/circle-four-section.svg"
+                  alt=""
+                />
+                <h3 class="four-section-number-text">
+                  5. Обследование после курса лечения
+                </h3>
+              </div>
+              <p class="four-section-main-text move">
+                По завершении лечения врач дает пациенту все необходимые
+                выписки, заключения и рекомендации относительно дальнейшего
+                лечения, плановых обследований, реабилитации. Также пациент
+                может получить медицинскую помощь, консультативную поддержку
+                врача после возвращения домой.
+              </p>
+              <button class="btn btn-primary four-button" type="button">
+                <p class="button-text">Записаться на Консультацию</p>
               </button>
             </div>
           </div>
-          <ul class="about">
-            <li>
-              <p class="about__label">Опыт</p>
-              <p class="about__value">40 лет</p>
-            </li>
-            <li>
-              <p class="about__label">Пациентов</p>
-              <p class="about__value">18 000+</p>
-            </li>
-            <li>
-              <p class="about__label">Сертификатов</p>
-              <p class="about__value">35+</p>
-            </li>
-          </ul>
         </div>
-        <div class="summary__photo">
-          <img src="./assets/images/photo.png" alt="Photo" />
-        </div>
-        <div class="summary__photo-mobile">
-          <img src="./assets/images/photo-mobile.png" alt="Photo" />
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <div class="backdrop"></div>
-  <script src="./js/nav-burger.js"></script>
-</body>
-
+    <div class="backdrop"></div>
+    <script src="./js/nav-burger.js"></script>
+  </body>
 </html>
