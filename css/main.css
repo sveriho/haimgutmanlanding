@@ -233,7 +233,7 @@ h2.about-details__title {
 /* Start Quote Section */
 
 .quote {
-  background: #f3f3f3;
+  background: var(--color-gray-bg);
 }
 
 .quote__bg {
@@ -266,6 +266,53 @@ h2.about-details__title {
 }
 
 /* End Quote Section */
+
+/* Start Services Section */
+
+.services {
+  padding: 70px 0;
+}
+
+.services__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.services__title {
+  font-size: 64px;
+  line-height: 120%;
+}
+
+.services__content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.services__content-list {
+  margin-left: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.services__content-listitem {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 160%;
+  list-style-image: url('../assets/images/svg/ellipsis.svg');
+}
+
+.services__content-listitem > span {
+  margin-left: 10px;
+  display: block;
+}
+
+/* End Services Section */
 
 @media only screen and (max-width: 1199px) {
   /* Start Header section */
@@ -410,6 +457,26 @@ h2.about-details__title {
   }
 
   /* End Quote Section */
+
+  /* Start Services Section */
+
+  .services {
+    padding: 60px 0;
+  }
+
+  .services__container {
+    flex-direction: column;
+  }
+
+  .services__content {
+    max-width: unset;
+  }
+
+  h2.services__title {
+    font-size: 48px;
+  }
+
+  /* End Services Section */
 }
 
 @media only screen and (max-width: 767px) {
@@ -509,6 +576,10 @@ h2.about-details__title {
   /* Start About Details Section */
 
   h2.about-details__title {
+    font-size: 36px;
+  }
+
+  h2.services__title {
     font-size: 36px;
   }
   
