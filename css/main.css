@@ -175,6 +175,10 @@
 /* Start About Details Section */
 
 .about-details {
+  background-color: var(--color-about-bg);
+}
+
+.about-details__container {
   padding: 80px 25px 60px;
   width: 100%;
   display: flex;
@@ -334,7 +338,7 @@ h2.about-details__title {
 
   /* Start About Details Section */
 
-  .about-details {
+  .about-details__container {
     flex-direction: column;
     gap: 24px;
   }
@@ -443,6 +447,10 @@ h2.about-details__title {
   }
   
   .about-details__image {
+    width: 100%;
+  }
+
+  .about-details__btn-container > button {
     width: 100%;
   }
 
