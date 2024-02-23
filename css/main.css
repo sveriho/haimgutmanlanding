@@ -191,12 +191,6 @@
   gap: 40px;
 }
 
-h2.about-details__title {
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 120%;
-}
-
 .about-details__content {
   display: flex;
   flex-direction: column;
@@ -214,18 +208,6 @@ h2.about-details__title {
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-
-.about-details__listitem {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 160%;
-  list-style-image: url('../assets/images/svg/ellipsis.svg');
-}
-
-.about-details__listitem > span {
-  margin-left: 10px;
-  display: block;
 }
 
 /* End About Details Section */
@@ -279,11 +261,6 @@ h2.about-details__title {
   gap: 32px;
 }
 
-.services__title {
-  font-size: 64px;
-  line-height: 120%;
-}
-
 .services__content {
   max-width: 600px;
   display: flex;
@@ -300,19 +277,75 @@ h2.about-details__title {
   gap: 12px;
 }
 
-.services__content-listitem {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 160%;
-  list-style-image: url('../assets/images/svg/ellipsis.svg');
-}
-
-.services__content-listitem > span {
-  margin-left: 10px;
-  display: block;
-}
-
 /* End Services Section */
+
+/* Start Patients Section */
+
+.patients {
+  padding: 80px 0;
+  background-color: var(--color-gray-bg);
+}
+
+.patients p {
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.patients__container {
+  display: flex;
+  gap: 50px;
+}
+
+.patients__common {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.patients__stage-subtitle {
+  margin-left: 15px;
+  padding-left: 30px;
+  display: flex;
+  position: relative;
+  border-left: 3px solid var(--color-primary);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 180%;
+}
+
+.patients__stage-subtitle::before {
+  content: url('../assets/images/svg/circle.svg');
+  margin-right: 15px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: -17.5px;
+  background-color: var(--color-gray-bg);
+}
+
+.patients__stage-content {
+  margin-left: 15px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  border-left: 3px solid var(--color-primary);
+}
+
+.patients__stage-content.no-border {
+  border-left: none;
+}
+
+.patients__stage-list {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.patients__button-container {
+  padding-left: 45px;
+}
+
+/* End Patiens Section */
 
 @media only screen and (max-width: 1199px) {
   /* Start Header section */
@@ -431,10 +464,6 @@ h2.about-details__title {
     flex-direction: column-reverse;
   }
 
-  h2.about-details__title {
-    font-size: 48px;
-  }
-
   .about-details__image {
     margin: 0 auto;
     width: 80%;
@@ -472,11 +501,19 @@ h2.about-details__title {
     max-width: unset;
   }
 
-  h2.services__title {
-    font-size: 48px;
+  /* End Services Section */
+
+  /* Start Patiens Section */
+
+  .patients {
+    padding: 70px 0;
   }
 
-  /* End Services Section */
+  .patients__container {
+    flex-direction: column;
+  }
+
+  /* End Patiens Section */
 }
 
 @media only screen and (max-width: 767px) {
@@ -574,14 +611,6 @@ h2.about-details__title {
   /* End Summary section */
 
   /* Start About Details Section */
-
-  h2.about-details__title {
-    font-size: 36px;
-  }
-
-  h2.services__title {
-    font-size: 36px;
-  }
   
   .about-details__image {
     width: 100%;
@@ -592,4 +621,21 @@ h2.about-details__title {
   }
 
   /* End About Details Section */
+
+
+  /* Start Patients Section */
+
+  .patients {
+    padding: 60px 0;
+  }
+
+  .patients__button-container {
+    padding-left: 0;
+  }
+
+  .patients__button-container > button {
+    width: 100%;
+  }
+
+  /* End Patients Section */
 }
