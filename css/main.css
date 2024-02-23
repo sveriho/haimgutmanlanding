@@ -230,6 +230,43 @@ h2.about-details__title {
 
 /* End About Details Section */
 
+/* Start Quote Section */
+
+.quote {
+  background: #f3f3f3;
+}
+
+.quote__bg {
+  position: absolute;
+  left: 55px;
+}
+
+.quote__container {
+  display: flex;
+  align-items: center;
+}
+
+.quote__content {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.quote__content-label {
+  font-size: 16px;
+}
+
+.quote__content-text {
+  font-size: 31px;
+  line-height: 140%;
+}
+
+.quote__image-tablet {
+  display: none;
+}
+
+/* End Quote Section */
+
 @media only screen and (max-width: 1199px) {
   /* Start Header section */
 
@@ -357,6 +394,22 @@ h2.about-details__title {
   }
 
   /* End About Details Section */
+
+  /* Start Quote Section */
+
+  .quote__content-text {
+    font-size: 24px;
+  }
+
+  .quote__image-desktop {
+    display: none;
+  }
+
+  .quote__image-tablet {
+    display: block;
+  }
+
+  /* End Quote Section */
 }
 
 @media only screen and (max-width: 767px) {
@@ -375,6 +428,19 @@ h2.about-details__title {
   }
 
   /* End Summary section */
+
+    /* Start Quote Section */
+
+    .quote__container {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .quote__image {
+      display: none;
+    }
+  
+    /* End Quote Section */
 }
 
 @media only screen and (max-width: 599px) {
