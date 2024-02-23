@@ -1,121 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/main.css">
+    <title>Хаим Гутман</title>
+  </head>
 
-  <title>Хаим Гутман</title>
-</head>
-
-<body>
-  <header class="header container">
-    <div class="header__burger">
-      <button class="header__burger-btn" type="button"></button>
-    </div>
-    <img class="header__logo" src="./assets/images/svg/logo.svg" alt="Logo" />
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-listitem title">
-          <span class="font-prata">Меню</span>
+  <body>
+    <header class="header container">
+      <div class="header__burger">
+        <button class="header__burger-btn" type="button"></button>
+      </div>
+      <img class="header__logo" src="./assets/images/svg/logo.svg" alt="Logo" />
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-listitem title">
+            <span class="font-prata">Меню</span>
+          </li>
+          <li class="header__nav-listitem">
+            <a class="header__nav-link" href="#about">О профессоре</a>
+          </li>
+          <li class="header__nav-listitem">
+            <a class="header__nav-link" href="#services">Услуги</a>
+          </li>
+          <li class="header__nav-listitem">
+            <a class="header__nav-link" href="#patients"
+              >Иностранные пациенты</a
+            >
+          </li>
+          <li class="header__nav-listitem">
+            <a class="header__nav-link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="header__nav-listitem">
+            <a class="header__nav-link" href="#partners">Партнеры</a>
+          </li>
+          <li class="header__nav-listitem">
+            <a class="header__nav-link" href="#certificates">Сертификаты</a>
+          </li>
+          <li class="header__nav-listitem">
+            <a class="header__nav-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__socials">
+        <li>
+          <a class="header__socials-icon whatsapp" href="#"></a>
         </li>
-        <li class="header__nav-listitem">
-          <a class="header__nav-link" href="#about">О профессоре</a>
+        <li>
+          <a class="header__socials-icon telegram" href="#"></a>
         </li>
-        <li class="header__nav-listitem">
-          <a class="header__nav-link" href="#services">Услуги</a>
+        <li>
+          <a class="header__socials-icon viber" href="#"></a>
         </li>
-        <li class="header__nav-listitem">
-          <a class="header__nav-link" href="#patients">Иностранные пациенты</a>
-        </li>
-        <li class="header__nav-listitem">
-          <a class="header__nav-link" href="#reviews">Отзывы</a>
-        </li>
-        <li class="header__nav-listitem">
-          <a class="header__nav-link" href="#partners">Партнеры</a>
-        </li>
-        <li class="header__nav-listitem">
-          <a class="header__nav-link" href="#certificates">Сертификаты</a>
-        </li>
-        <li class="header__nav-listitem">
-          <a class="header__nav-link" href="#faq">FAQ</a>
+        <li>
+          <select class="lang-selector">
+            <option value="1">RU</option>
+            <option value="2">ENG</option>
+          </select>
         </li>
       </ul>
-    </nav>
-    <ul class="header__socials">
-      <li>
-        <a class="header__socials-icon whatsapp" href="#"></a>
-      </li>
-      <li>
-        <a class="header__socials-icon telegram" href="#"></a>
-      </li>
-      <li>
-        <a class="header__socials-icon viber" href="#"></a>
-      </li>
-      <li>
-        <select class="lang-selector">
-          <option value="1">RU</option>
-          <option value="2">ENG</option>
-        </select>
-      </li>
-    </ul>
-  </header>
-  <main>
-    <section id="about" class="summary">
-      <div class="container summary__container flex relative">
-        <div class="summary__content">
-          <div class="flex-empty"></div>
-          <div class="common">
-            <p class="summary__content-degree font-prata">Профессор</p>
-            <h1 class="summary__content-name font-prata">Хаим Гутман</h1>
-            <p class="summary__content-description">
-              Известный онколог, активно участвует в работе медицинских союзов,
-              включая Союз врачей Израиля, Израильскую ассоциацию хирургов,
-              Израильское общество хирургической онкологии, Европейскую
-              ассоциацию онкохирургии, Общество онкохирургии США.
-            </p>
-            <div class="btn-group">
-              <button class="btn btn-primary" type="button">
-                Записаться на Консультацию
-              </button>
-              <button class="btn btn-secondary" type="button">
-                О профессоре
-              </button>
+    </header>
+    <main>
+      <section id="about" class="summary">
+        <div class="container summary__container flex relative">
+          <div class="summary__content">
+            <div class="flex-empty"></div>
+            <div class="common">
+              <p class="summary__content-degree font-prata">Профессор</p>
+              <h1 class="summary__content-name font-prata">Хаим Гутман</h1>
+              <p class="summary__content-description">
+                Известный онколог, активно участвует в работе медицинских
+                союзов, включая Союз врачей Израиля, Израильскую ассоциацию
+                хирургов, Израильское общество хирургической онкологии,
+                Европейскую ассоциацию онкохирургии, Общество онкохирургии США.
+              </p>
+              <div class="btn-group">
+                <button class="btn btn-primary" type="button">
+                  Записаться на Консультацию
+                </button>
+                <button class="btn btn-secondary" type="button">
+                  О профессоре
+                </button>
+              </div>
+            </div>
+            <ul class="about">
+              <li>
+                <p class="about__label">Опыт</p>
+                <p class="about__value">40 лет</p>
+              </li>
+              <li>
+                <p class="about__label">Пациентов</p>
+                <p class="about__value">18 000+</p>
+              </li>
+              <li>
+                <p class="about__label">Сертификатов</p>
+                <p class="about__value">35+</p>
+              </li>
+            </ul>
+          </div>
+          <div class="summary__photo">
+            <img src="./assets/images/photo.png" alt="Photo" />
+          </div>
+          <div class="summary__photo-mobile">
+            <img src="./assets/images/photo-mobile.png" alt="Photo" />
+          </div>
+        </div>
+      </section>
+      <section id="FAQ" class="section-contact">
+        <div class="container">
+          <div class="section-contact-position">
+            <div class="section-contact-info">
+              <h2 class="section-contact-h">Контакты</h2>
+              <div class="section-contact-list-position">
+                <div>
+                  <ul class="section-contact-first-list">
+                    <li class="section-contact-li">
+                      <p class="section-contact-p">Телефон</p>
+                      <a class="section-contact-a" href=""
+                        >+380 (99) 123 44 55</a
+                      >
+                    </li>
+                    <li class="section-contact-li">
+                      <p class="section-contact-p">Почта</p>
+                      <a class="section-contact-a" href=""
+                        >doctor@argaman-clinic.com</a
+                      >
+                    </li>
+                    <li class="section-contact-li">
+                      <p class="section-contact-p">Поддержка</p>
+                      <a class="section-contact-a" href=""
+                        >support@argaman-clinic.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="section-contact-p section-contact-social">
+                    Социальные сети
+                  </p>
+                  <ul class="section-contact-second-list">
+                    <li class="section-contact-social-svg">
+                      <a href=""
+                        ><img src="./assets/images/svg/WhatsApp.svg" alt=""
+                      /></a>
+                      <p>WhatsApp</p>
+                    </li>
+                    <li class="section-contact-social-svg">
+                      <a href=""
+                        ><img src="./assets/images/svg/inst.svg" alt=""
+                      /></a>
+                      <p>Instagram</p>
+                    </li>
+                    <li class="section-contact-social-svg">
+                      <a href=""
+                        ><img src="./assets/images/svg/fb.svg" alt=""
+                      /></a>
+                      <p>Facebook</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169325.14861847594!2d34.835549164703274!3d48.46218085014401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd08468f%3A0xa1cf3d5f2c11aba!2z0JTQvdC10L_RgCwg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDQ5MDAw!5e0!3m2!1sru!2sua!4v1708170896264!5m2!1sru!2sua"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
-          <ul class="about">
-            <li>
-              <p class="about__label">Опыт</p>
-              <p class="about__value">40 лет</p>
-            </li>
-            <li>
-              <p class="about__label">Пациентов</p>
-              <p class="about__value">18 000+</p>
-            </li>
-            <li>
-              <p class="about__label">Сертификатов</p>
-              <p class="about__value">35+</p>
-            </li>
-          </ul>
         </div>
-        <div class="summary__photo">
-          <img src="./assets/images/photo.png" alt="Photo" />
-        </div>
-        <div class="summary__photo-mobile">
-          <img src="./assets/images/photo-mobile.png" alt="Photo" />
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <div class="backdrop"></div>
-  <script src="./js/nav-burger.js"></script>
-</body>
-
+    <div class="backdrop"></div>
+    <script src="./js/nav-burger.js"></script>
+  </body>
 </html>
