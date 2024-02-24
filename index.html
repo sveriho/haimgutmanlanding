@@ -1,403 +1,483 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/main.css">
+    <title>Хаим Гутман</title>
+  </head>
 
-  <title>Хаим Гутман</title>
-</head>
-
-<body>
-  <header id="header" class="header">
-    <div class="header__container container">
-      <div class="header__burger">
-        <button class="header__burger-btn" type="button"></button>
-      </div>
-      <img class="header__logo" src="./assets/images/svg/logo.svg" alt="Logo" />
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-listitem title">
-            <span class="font-prata">Меню</span>
+  <body>
+    <header id="header" class="header">
+      <div class="header__container container">
+        <div class="header__burger">
+          <button class="header__burger-btn" type="button"></button>
+        </div>
+        <img
+          class="header__logo"
+          src="./assets/images/svg/logo.svg"
+          alt="Logo"
+        />
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-listitem title">
+              <span class="font-prata">Меню</span>
+            </li>
+            <li class="header__nav-listitem">
+              <a class="header__nav-link" href="#about">О профессоре</a>
+            </li>
+            <li class="header__nav-listitem">
+              <a class="header__nav-link" href="#services">Услуги</a>
+            </li>
+            <li class="header__nav-listitem">
+              <a class="header__nav-link" href="#patients"
+                >Иностранные пациенты</a
+              >
+            </li>
+            <li class="header__nav-listitem">
+              <a class="header__nav-link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="header__nav-listitem">
+              <a class="header__nav-link" href="#partners">Партнеры</a>
+            </li>
+            <li class="header__nav-listitem">
+              <a class="header__nav-link" href="#certificates">Сертификаты</a>
+            </li>
+            <li class="header__nav-listitem">
+              <a class="header__nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__socials">
+          <li>
+            <a class="header__socials-icon whatsapp" href="#"></a>
           </li>
-          <li class="header__nav-listitem">
-            <a class="header__nav-link" href="#about">О профессоре</a>
+          <li>
+            <a class="header__socials-icon telegram" href="#"></a>
           </li>
-          <li class="header__nav-listitem">
-            <a class="header__nav-link" href="#services">Услуги</a>
+          <li>
+            <a class="header__socials-icon viber" href="#"></a>
           </li>
-          <li class="header__nav-listitem">
-            <a class="header__nav-link" href="#patients">Иностранные пациенты</a>
-          </li>
-          <li class="header__nav-listitem">
-            <a class="header__nav-link" href="#reviews">Отзывы</a>
-          </li>
-          <li class="header__nav-listitem">
-            <a class="header__nav-link" href="#partners">Партнеры</a>
-          </li>
-          <li class="header__nav-listitem">
-            <a class="header__nav-link" href="#certificates">Сертификаты</a>
-          </li>
-          <li class="header__nav-listitem">
-            <a class="header__nav-link" href="#faq">FAQ</a>
+          <li>
+            <select class="lang-selector">
+              <option value="1">RU</option>
+              <option value="2">ENG</option>
+            </select>
           </li>
         </ul>
-      </nav>
-      <ul class="header__socials">
-        <li>
-          <a class="header__socials-icon whatsapp" href="#"></a>
-        </li>
-        <li>
-          <a class="header__socials-icon telegram" href="#"></a>
-        </li>
-        <li>
-          <a class="header__socials-icon viber" href="#"></a>
-        </li>
-        <li>
-          <select class="lang-selector">
-            <option value="1">RU</option>
-            <option value="2">ENG</option>
-          </select>
-        </li>
-      </ul>
-    </div>
-  </header>
+      </div>
+    </header>
 
-  <main>
-    <!-- Summary -->
-    <section id="home" class="summary">
-      <div class="container summary__container flex relative">
-        <div class="summary__content">
-          <div class="flex-empty"></div>
-          <div class="common">
-            <p class="summary__content-degree font-prata">Профессор</p>
-            <h1 class="summary__content-name font-prata">Хаим Гутман</h1>
-            <p class="summary__content-description">
-              Известный онколог, активно участвует в работе медицинских союзов,
-              включая Союз врачей Израиля, Израильскую ассоциацию хирургов,
-              Израильское общество хирургической онкологии, Европейскую
-              ассоциацию онкохирургии, Общество онкохирургии США.
-            </p>
-            <div class="btn-group">
-              <button class="btn btn-primary" type="button">
-                Записаться на Консультацию
-              </button>
-              <button class="btn btn-secondary" type="button">
-                О профессоре
-              </button>
+    <main>
+      <!-- Summary -->
+      <section id="home" class="summary">
+        <div class="container summary__container flex relative">
+          <div class="summary__content">
+            <div class="flex-empty"></div>
+            <div class="common">
+              <p class="summary__content-degree font-prata">Профессор</p>
+              <h1 class="summary__content-name font-prata">Хаим Гутман</h1>
+              <p class="summary__content-description">
+                Известный онколог, активно участвует в работе медицинских
+                союзов, включая Союз врачей Израиля, Израильскую ассоциацию
+                хирургов, Израильское общество хирургической онкологии,
+                Европейскую ассоциацию онкохирургии, Общество онкохирургии США.
+              </p>
+              <div class="btn-group">
+                <button class="btn btn-primary" type="button">
+                  Записаться на Консультацию
+                </button>
+                <button class="btn btn-secondary" type="button">
+                  О профессоре
+                </button>
+              </div>
             </div>
+            <ul class="about">
+              <li>
+                <p class="about__label">Опыт</p>
+                <p class="about__value">40 лет</p>
+              </li>
+              <li>
+                <p class="about__label">Пациентов</p>
+                <p class="about__value">18 000+</p>
+              </li>
+              <li>
+                <p class="about__label">Сертификатов</p>
+                <p class="about__value">35+</p>
+              </li>
+            </ul>
           </div>
-          <ul class="about">
-            <li>
-              <p class="about__label">Опыт</p>
-              <p class="about__value">40 лет</p>
-            </li>
-            <li>
-              <p class="about__label">Пациентов</p>
-              <p class="about__value">18 000+</p>
-            </li>
-            <li>
-              <p class="about__label">Сертификатов</p>
-              <p class="about__value">35+</p>
-            </li>
-          </ul>
-        </div>
-        <div class="summary__photo">
-          <img src="./assets/images/photo.png" alt="Photo" />
-        </div>
-        <div class="summary__photo-mobile">
-          <img src="./assets/images/photo-mobile.png" alt="Photo" />
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="about-details">
-      <div class="about-details__container container">
-        <div class="about-details__title-container">
-          <h2 class="about-details__title font-prata text-main-about">О профессоре Хаиме Гутмане</h2>
-          <img
-            class="about-details__image"
-            src="./assets/images/work-process.png"
-            alt="work-process"
-          />
-        </div>
-        <div class="about-details__content">
-          <p class="about-details__paragraph">
-            Профессор Хаим Гутман, известный онколог, активно участвует в работе
-            медицинских союзов, включая Союз врачей Израиля, Израильскую
-            ассоциацию хирургов, Израильское общество хирургической онкологии,
-            Европейскую ассоциацию онкохирургии, Общество онкохирургии США.
-          </p>
-          <p class="about-details__paragraph">
-            Профессор Гутман окончил медицинскую школу при медицинском
-            факультете имени Саклера, Тель-Авивского университета с отличием и
-            получил лицензию на общую хирургию. После этого он прошел обучение в
-            онкологическом центре MD Anderson в Хьюстоне (США) в качестве
-            научного сотрудника и соисследователя в области онкологической
-            хирургии. Он является преподавателем на медицинском факультете
-            Тель-Авивского университета, автором множества научных работ, статей
-            и публикаций в известных медицинских журналах. За свои научные
-            достижения он был удостоен множества наград и стипендий, включая
-            премию Фонда онкологического центра Андерсона в США в 1992 году.
-          </p>
-          <p class="about-details__paragraph">
-            В настоящее время Хаим Гутман занимает должность ведущего хирурга в
-            одной из лучших клиник страны и специализируется на онкологических
-            заболеваниях. Он имеет более 35 лет успешной практики в лечении
-            сложных клинических случаев. Его специализация включает лечение
-            множества патологий, таких как рак молочной железы, опухоли кожи и
-            мягких тканей (меланома, саркома), проведение люмпэктомии, тотальной
-            мастэктомии, хирургия и реконструкция молочных желез.
-          </p>
-          <ul class="about-details__list">
-            <li class="about-details__listitem listitem">
-              <span>
-                Хирургическое лечение онкологических заболеваний, включая рак
-                молочной железы, разработка новаторских хирургических методик и
-                тестирование их эффективности в клинической практике.
-              </span>
-            </li>
-            <li class="about-details__listitem listitem">
-              <span>
-                Применение современных малоинвазивных методов для удаления
-                злокачественных опухолей кожи, таких как плоскоклеточный рак,
-                меланома и базалиома.
-              </span>
-            </li>
-            <li class="about-details__listitem listitem">
-              <span>
-                Использование малоинвазивных методов хирургического удаления
-                опухолей в органах пищеварительной системы.
-              </span>
-            </li>
-            <li class="about-details__listitem listitem">
-              <span>
-                Терапевтическое лечение саркомы мягких ткане и исследования в
-                области инструментальной онкодиагностики, органосохраняющей
-                хирургии при лечении рака молочной железы и других видов
-                онкологических заболеваний.
-              </span>
-            </li>
-          </ul>
-          <div class="about-details__btn-container">
-            <button class="btn btn-primary" type="button">
-              Записаться на Консультацию
-            </button>
+          <div class="summary__photo">
+            <img src="./assets/images/photo.png" alt="Photo" />
+          </div>
+          <div class="summary__photo-mobile">
+            <img src="./assets/images/photo-mobile.png" alt="Photo" />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Quote -->
-    <section class="quote">
-      <img
-        class="quote__bg"
-        src="./assets/images/bg-quote.png"
-        alt=""
-      />
-
-      <div class="quote__container container">
-        <div class="quote__content">
-          <p class="quote__content-label">Цитата профессора</p>
-          <p class="quote__content-text font-prata">
-            В своей практике применяю передовые методы диагностики,
-            современные медицинские технологии и протоколы лечения
-          </p>
-          <p class="quote__content-label">Хаим Гутман</p>
-        </div>
-        <div class="quote__image">
-          <img
-            class="quote__image-desktop"
-            src="./assets/images/photo-quote.png"
-            alt=""
-          />
-          <img
-            class="quote__image-tablet"
-            src="./assets/images/photo-quote-tablet.png"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="services">
-      <div class="services__container container">
-        <h2 class="services__title font-prata">
-          Услуги профессора Хаима Гутмана
-        </h2>
-        <div class="services__content">
-          <p class="services__content-subtitle">
-            Профессор Хаим Гутман сотрудничает с крупнейшими и наиболее
-            известными медицинскими клиниками в Израиле, в том числе
-            Тель-Авивский медицинский центр Ихилов (Сураски), медикал центр
-            «Герцлия», частная клиника «Рафаэль». Пациент может выбрать
-            лучшую клинику, опираясь на отзывы, рейтинги, изучив репутацию
-            мед учреждения, а также руководствуясь своим опытом и личными
-            впечатлениями.
-          </p>
-          <ul class="services__content-list">
-            <li class="services__content-listitem listitem">
-              <span>
-                Хирургическое лечение онкологических заболеваний, включая
-                рак молочной железы, разработка новаторских хирургических
-                методик и тестирование их эффективности в клинической
-                практике.
-              </span>
-            </li>
-            <li class="services__content-listitem listitem">
-              <span>
-                Применение современных малоинвазивных методов для удаления
-                злокачественных опухолей кожи, таких как плоскоклеточный
-                рак, меланома и базалиома.
-              </span>
-            </li>
-            <li class="services__content-listitem listitem">
-              <span>
-                Использование малоинвазивных методов хирургического удаления
-                опухолей в органах пищеварительной системы.
-              </span>
-            </li>
-            <li class="services__content-listitem listitem">
-              <span>
-                Терапевтическое лечение саркомы мягких ткане и исследования
-                в области инструментальной онкодиагностики,
-                органосохраняющей хирургии при лечении рака молочной железы
-                и других видов онкологических заболеваний.
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Foreign Patients -->
-    <section id="patients" class="patients">
-      <div class="patients__container container">
-        <div class="patients__common">
-          <h2 class="patients__title font-prata">
-            Отдел приема иностранных пациентов
-          </h2>
-          <p>
-            В своей практике он применяет передовые методы диагностики,
-            современные медицинские технологии и протоколы лечения, а также
-            высококачественные хирургические инструменты и высокоэффективные
-            лекарственные препараты.
-          </p>
-        </div>
-        <div class="patients__stages">
-          <h3 class="patients__stage-subtitle">
-            1. Выбор лучшего медицинского учреждения
-          </h3>
-          <p class="patients__stage-content">
-            Профессор Хаим Гутман сотрудничает с крупнейшими и наиболее
-            известными медицинскими клиниками в Израиле, в том числе
-            Тель-Авивский медицинский центр Ихилов (Сураски), медикал центр
-            «Герцлия», частная клиника «Рафаэль». Пациент может выбрать
-            лучшую клинику, опираясь на отзывы, рейтинги, изучив репутацию
-            мед учреждения, а также руководствуясь своим опытом и личными
-            впечатлениями. 
-          </p>
-          <h3 class="patients__stage-subtitle">
-            2. Планирование и организация поездки
-          </h3>
-          <div class="patients__stage-content">
-            <p>
-              Компания берет на себя решение всех организационных вопросов:
+      <!-- About -->
+      <section id="about" class="about-details">
+        <div class="about-details__container container">
+          <div class="about-details__title-container">
+            <h2 class="about-details__title font-prata text-main-about">
+              О профессоре Хаиме Гутмане
+            </h2>
+            <img
+              class="about-details__image"
+              src="./assets/images/work-process.png"
+              alt="work-process"
+            />
+          </div>
+          <div class="about-details__content">
+            <p class="about-details__paragraph">
+              Профессор Хаим Гутман, известный онколог, активно участвует в
+              работе медицинских союзов, включая Союз врачей Израиля,
+              Израильскую ассоциацию хирургов, Израильское общество
+              хирургической онкологии, Европейскую ассоциацию онкохирургии,
+              Общество онкохирургии США.
             </p>
-            <ul class="patients__stage-list">
-              <li class="listitem">
+            <p class="about-details__paragraph">
+              Профессор Гутман окончил медицинскую школу при медицинском
+              факультете имени Саклера, Тель-Авивского университета с отличием и
+              получил лицензию на общую хирургию. После этого он прошел обучение
+              в онкологическом центре MD Anderson в Хьюстоне (США) в качестве
+              научного сотрудника и соисследователя в области онкологической
+              хирургии. Он является преподавателем на медицинском факультете
+              Тель-Авивского университета, автором множества научных работ,
+              статей и публикаций в известных медицинских журналах. За свои
+              научные достижения он был удостоен множества наград и стипендий,
+              включая премию Фонда онкологического центра Андерсона в США в 1992
+              году.
+            </p>
+            <p class="about-details__paragraph">
+              В настоящее время Хаим Гутман занимает должность ведущего хирурга
+              в одной из лучших клиник страны и специализируется на
+              онкологических заболеваниях. Он имеет более 35 лет успешной
+              практики в лечении сложных клинических случаев. Его специализация
+              включает лечение множества патологий, таких как рак молочной
+              железы, опухоли кожи и мягких тканей (меланома, саркома),
+              проведение люмпэктомии, тотальной мастэктомии, хирургия и
+              реконструкция молочных желез.
+            </p>
+            <ul class="about-details__list">
+              <li class="about-details__listitem listitem">
                 <span>
-                  Помощь в оформлении визы и бронировании перелета.
+                  Хирургическое лечение онкологических заболеваний, включая рак
+                  молочной железы, разработка новаторских хирургических методик
+                  и тестирование их эффективности в клинической практике.
                 </span>
               </li>
-              <li class="listitem">
+              <li class="about-details__listitem listitem">
                 <span>
-                  Помощь в аренде жилья – бронирование отелей, поиск и
-                  аренда квартиры.
+                  Применение современных малоинвазивных методов для удаления
+                  злокачественных опухолей кожи, таких как плоскоклеточный рак,
+                  меланома и базалиома.
                 </span>
               </li>
-              <li class="listitem">
+              <li class="about-details__listitem listitem">
                 <span>
-                  Трансфер – встреча в аэропорту, поездки в клинику.
+                  Использование малоинвазивных методов хирургического удаления
+                  опухолей в органах пищеварительной системы.
                 </span>
               </li>
-              <li class="listitem">
+              <li class="about-details__listitem listitem">
                 <span>
-                  Перевод медицинских документов.
-                </span>
-              </li>
-              <li class="listitem">
-                <span>
-                  Планирование консультаций, обследований, лечения.
+                  Терапевтическое лечение саркомы мягких ткане и исследования в
+                  области инструментальной онкодиагностики, органосохраняющей
+                  хирургии при лечении рака молочной железы и других видов
+                  онкологических заболеваний.
                 </span>
               </li>
             </ul>
-            <p>
-              Мы готовы предложить вам индивидуальный пакет медицинского
-              обслуживания, полностью соответствующий вашим личным
-              пожеланиям и медицинским потребностям.
-            </p>
-          </div>
-          <h3 class="patients__stage-subtitle">
-            3. Консультация по прибытии в Израиль
-          </h3>
-          <p class="patients__stage-content">
-            Консультация с врачом проходит по приезду пациента в заранее
-            назначенное время. Для консультации у пациента должны быть на
-            руках анализы крови, включая определение опухолевых маркеров,
-            данные исследования гистологического материала, обзорная ПЭТ-КТ
-            или КТ трех областей, заключение от онколога (где пациент ранее
-            проходил обследование, лечение). На этом этапе происходит
-            обсуждение плана диагностики и лечения на основании имеющихся
-            результатов обследования и информации о текущем состоянии
-            пациента, его жалоб на момент обращения.
-          </p>
-          <h3 class="patients__stage-subtitle">
-            4. Лечение и реабилитация
-          </h3>
-          <p class="patients__stage-content">
-            Профессор Хаим Гутман использует ресурсы ведущих клиник для
-            диагностики, лечения и послеоперационного восстановления
-            пациента. Каждому пациенту будет обеспечен самый
-            профессиональный и качественный уход, назначен координатор,
-            который станет основным контактным лицом во время пребывания в
-            Израиле. Он будет сопровождать пациента на консультации и давать
-            качественный перевод врачу и пациенту, окажет всю необходимую
-            помощь и поддержку, будет контролировать своевременное
-            выполнение всех этапов лечения пациента и следить за соблюдением
-            его интересов.
-          </p>
-          <h3 class="patients__stage-subtitle align-end">
-            5. Обследование после курса лечения
-          </h3>
-          <p class="patients__stage-content no-border">
-            По завершении лечения врач дает пациенту все необходимые
-            выписки, заключения и рекомендации относительно дальнейшего
-            лечения, плановых обследований, реабилитации. Также пациент
-            может получить медицинскую помощь, консультативную поддержку
-            врача после возвращения домой.
-          </p>
-          <div class="patients__button-container">
-            <button class="btn btn-primary" type="button">
-              Записаться на Консультацию
-            </button>
+            <div class="about-details__btn-container">
+              <button class="btn btn-primary" type="button">
+                Записаться на Консультацию
+              </button>
+            </div>
           </div>
         </div>
+      </section>
+
+      <!-- Quote -->
+      <section class="quote">
+        <img class="quote__bg" src="./assets/images/bg-quote.png" alt="" />
+
+        <div class="quote__container container">
+          <div class="quote__content">
+            <p class="quote__content-label">Цитата профессора</p>
+            <p class="quote__content-text font-prata">
+              В своей практике применяю передовые методы диагностики,
+              современные медицинские технологии и протоколы лечения
+            </p>
+            <p class="quote__content-label">Хаим Гутман</p>
+          </div>
+          <div class="quote__image">
+            <img
+              class="quote__image-desktop"
+              src="./assets/images/photo-quote.png"
+              alt=""
+            />
+            <img
+              class="quote__image-tablet"
+              src="./assets/images/photo-quote-tablet.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="services">
+        <div class="services__container container">
+          <h2 class="services__title font-prata">
+            Услуги профессора Хаима Гутмана
+          </h2>
+          <div class="services__content">
+            <p class="services__content-subtitle">
+              Профессор Хаим Гутман сотрудничает с крупнейшими и наиболее
+              известными медицинскими клиниками в Израиле, в том числе
+              Тель-Авивский медицинский центр Ихилов (Сураски), медикал центр
+              «Герцлия», частная клиника «Рафаэль». Пациент может выбрать лучшую
+              клинику, опираясь на отзывы, рейтинги, изучив репутацию мед
+              учреждения, а также руководствуясь своим опытом и личными
+              впечатлениями.
+            </p>
+            <ul class="services__content-list">
+              <li class="services__content-listitem listitem">
+                <span>
+                  Хирургическое лечение онкологических заболеваний, включая рак
+                  молочной железы, разработка новаторских хирургических методик
+                  и тестирование их эффективности в клинической практике.
+                </span>
+              </li>
+              <li class="services__content-listitem listitem">
+                <span>
+                  Применение современных малоинвазивных методов для удаления
+                  злокачественных опухолей кожи, таких как плоскоклеточный рак,
+                  меланома и базалиома.
+                </span>
+              </li>
+              <li class="services__content-listitem listitem">
+                <span>
+                  Использование малоинвазивных методов хирургического удаления
+                  опухолей в органах пищеварительной системы.
+                </span>
+              </li>
+              <li class="services__content-listitem listitem">
+                <span>
+                  Терапевтическое лечение саркомы мягких ткане и исследования в
+                  области инструментальной онкодиагностики, органосохраняющей
+                  хирургии при лечении рака молочной железы и других видов
+                  онкологических заболеваний.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Foreign Patients -->
+      <section id="patients" class="patients">
+        <div class="patients__container container">
+          <div class="patients__common">
+            <h2 class="patients__title font-prata">
+              Отдел приема иностранных пациентов
+            </h2>
+            <p>
+              В своей практике он применяет передовые методы диагностики,
+              современные медицинские технологии и протоколы лечения, а также
+              высококачественные хирургические инструменты и высокоэффективные
+              лекарственные препараты.
+            </p>
+          </div>
+          <div class="patients__stages">
+            <h3 class="patients__stage-subtitle">
+              1. Выбор лучшего медицинского учреждения
+            </h3>
+            <p class="patients__stage-content">
+              Профессор Хаим Гутман сотрудничает с крупнейшими и наиболее
+              известными медицинскими клиниками в Израиле, в том числе
+              Тель-Авивский медицинский центр Ихилов (Сураски), медикал центр
+              «Герцлия», частная клиника «Рафаэль». Пациент может выбрать лучшую
+              клинику, опираясь на отзывы, рейтинги, изучив репутацию мед
+              учреждения, а также руководствуясь своим опытом и личными
+              впечатлениями. 
+            </p>
+            <h3 class="patients__stage-subtitle">
+              2. Планирование и организация поездки
+            </h3>
+            <div class="patients__stage-content">
+              <p>
+                Компания берет на себя решение всех организационных вопросов:
+              </p>
+              <ul class="patients__stage-list">
+                <li class="listitem">
+                  <span>
+                    Помощь в оформлении визы и бронировании перелета.
+                  </span>
+                </li>
+                <li class="listitem">
+                  <span>
+                    Помощь в аренде жилья – бронирование отелей, поиск и аренда
+                    квартиры.
+                  </span>
+                </li>
+                <li class="listitem">
+                  <span>
+                    Трансфер – встреча в аэропорту, поездки в клинику.
+                  </span>
+                </li>
+                <li class="listitem">
+                  <span> Перевод медицинских документов. </span>
+                </li>
+                <li class="listitem">
+                  <span>
+                    Планирование консультаций, обследований, лечения.
+                  </span>
+                </li>
+              </ul>
+              <p>
+                Мы готовы предложить вам индивидуальный пакет медицинского
+                обслуживания, полностью соответствующий вашим личным пожеланиям
+                и медицинским потребностям.
+              </p>
+            </div>
+            <h3 class="patients__stage-subtitle">
+              3. Консультация по прибытии в Израиль
+            </h3>
+            <p class="patients__stage-content">
+              Консультация с врачом проходит по приезду пациента в заранее
+              назначенное время. Для консультации у пациента должны быть на
+              руках анализы крови, включая определение опухолевых маркеров,
+              данные исследования гистологического материала, обзорная ПЭТ-КТ
+              или КТ трех областей, заключение от онколога (где пациент ранее
+              проходил обследование, лечение). На этом этапе происходит
+              обсуждение плана диагностики и лечения на основании имеющихся
+              результатов обследования и информации о текущем состоянии
+              пациента, его жалоб на момент обращения.
+            </p>
+            <h3 class="patients__stage-subtitle">4. Лечение и реабилитация</h3>
+            <p class="patients__stage-content">
+              Профессор Хаим Гутман использует ресурсы ведущих клиник для
+              диагностики, лечения и послеоперационного восстановления пациента.
+              Каждому пациенту будет обеспечен самый профессиональный и
+              качественный уход, назначен координатор, который станет основным
+              контактным лицом во время пребывания в Израиле. Он будет
+              сопровождать пациента на консультации и давать качественный
+              перевод врачу и пациенту, окажет всю необходимую помощь и
+              поддержку, будет контролировать своевременное выполнение всех
+              этапов лечения пациента и следить за соблюдением его интересов.
+            </p>
+            <h3 class="patients__stage-subtitle align-end">
+              5. Обследование после курса лечения
+            </h3>
+            <p class="patients__stage-content no-border">
+              По завершении лечения врач дает пациенту все необходимые выписки,
+              заключения и рекомендации относительно дальнейшего лечения,
+              плановых обследований, реабилитации. Также пациент может получить
+              медицинскую помощь, консультативную поддержку врача после
+              возвращения домой.
+            </p>
+            <div class="patients__button-container">
+              <button class="btn btn-primary" type="button">
+                Записаться на Консультацию
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-position">
+          <div class="footer-position-logo-button">
+            <div class="footer-contact-button-position">
+              <a class="footer-logo" href=""
+                ><img src="./assets/images/svg/footer-logo.svg" alt=""
+              /></a>
+              <div class="footer-button-group">
+                <button class="footer-button-svg" type="button">
+                  <img src="./assets/images/footer/Group.png" alt="" /></button
+                ><button class="footer-button-svg" type="button">
+                  <img
+                    src="./assets/images/footer/Telegram.png"
+                    alt=""
+                  /></button
+                ><button class="footer-button-svg" type="button">
+                  <img src="./assets/images/footer/Layer_2.png" alt="" />
+                </button>
+              </div>
+            </div>
+            <p class="footer-logo-text">
+              Лицензия на предоставление услуг номер #494853 от 21.09.2009
+              министерства услуг и медицин Израиля
+            </p>
+          </div>
+          <div class="footer-contact-postion">
+            <div class="footer-contact">
+              <p class="footer-contact-p">Контакты</p>
+              <ul class="footer-contact-list">
+                <li>
+                  <p class="footer-contact-list-p">Телефон</p>
+                  <a class="footer-contact-list-a" href=""
+                    >+380 (99) 123 44 55</a
+                  >
+                </li>
+                <li>
+                  <p class="footer-contact-list-p">Почта</p>
+                  <a class="footer-contact-list-a" href=""
+                    >doctor@argaman-clinic.com</a
+                  >
+                </li>
+                <li>
+                  <p class="footer-contact-list-p">Поддержка</p>
+                  <a class="footer-contact-list-a" href=""
+                    >support@argaman-clinic.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <p class="footer-social-p">Социальные сети</p>
+              <ul class="footer-social-list">
+                <li>
+                  <a href=""
+                    ><img src="./assets/images/svg/footer-wp.svg" alt=""
+                  /></a>
+                  <p>WhatsApp</p>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="./assets/images/svg/footer-inst.svg" alt=""
+                  /></a>
+                  <p>Instagram</p>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="./assets/images/svg/footer-fb.svg" alt=""
+                  /></a>
+                  <p>Facebook</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-down-text">
+          <p class="footer-logo-p">Все права защищены (с) 2024</p>
+          <p class="footer-logo-p">Политика конфиденциальности</p>
+        </div>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <div class="backdrop"></div>
-  <script src="./js/header-scroll.js"></script>
-  <script src="./js/nav-burger.js"></script>
-</body>
-
+    <div class="backdrop"></div>
+    <script src="./js/header-scroll.js"></script>
+    <script src="./js/nav-burger.js"></script>
+  </body>
 </html>

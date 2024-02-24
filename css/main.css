@@ -29,13 +29,13 @@
 .header__burger-btn {
   width: 32px;
   height: 32px;
-  background-image: url('../assets/images/svg/menu.svg');
+  background-image: url("../assets/images/svg/menu.svg");
   border: none;
   cursor: pointer;
 }
 
 .header__burger-btn.active {
-  background-image: url('../assets/images/svg/cross.svg');
+  background-image: url("../assets/images/svg/cross.svg");
 }
 
 .header__logo {
@@ -78,15 +78,15 @@
 }
 
 .header__socials-icon.whatsapp {
-  background-image: url('../assets/images/svg/WhatsApp.svg');
+  background-image: url("../assets/images/svg/WhatsApp.svg");
 }
 
 .header__socials-icon.telegram {
-  background-image: url('../assets/images/svg/Telegram.svg');
+  background-image: url("../assets/images/svg/Telegram.svg");
 }
 
 .header__socials-icon.viber {
-  background-image: url('../assets/images/svg/Viber.svg');
+  background-image: url("../assets/images/svg/Viber.svg");
 }
 
 .lang-selector {
@@ -104,7 +104,7 @@
   padding-top: 78px; /* To compensate fixed header height */
   padding-bottom: 25px;
   min-height: 600px;
-  background: url('../assets/images/summary-bg.jpg') no-repeat;
+  background: url("../assets/images/summary-bg.jpg") no-repeat;
   background-size: cover;
   overflow-x: hidden;
 }
@@ -166,7 +166,7 @@
 }
 
 .about__value {
-  font-family: 'Prata';
+  font-family: "Prata";
   font-size: 28px;
   line-height: 160%;
 }
@@ -319,7 +319,7 @@
 }
 
 .patients__stage-subtitle::before {
-  content: url('../assets/images/svg/circle.svg');
+  content: url("../assets/images/svg/circle.svg");
   margin-right: 15px;
   width: 32px;
   height: 32px;
@@ -351,6 +351,115 @@
 }
 
 /* End Patiens Section */
+
+/* Start footer */
+footer {
+  background: url(../assets/images/background-waves.png) #252525 no-repeat;
+  background-position: right;
+}
+
+.footer-position {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 78px;
+  padding-bottom: 34px;
+}
+
+.footer-logo > img {
+  padding-bottom: 24px;
+}
+
+.footer-logo-text {
+  width: 273px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: white;
+  opacity: 0.6;
+  padding-bottom: 82px;
+}
+
+.footer-logo-p {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: white;
+  opacity: 0.6;
+}
+
+.footer-contact-postion {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-contact-p {
+  color: #fff;
+  font-family: "Prata";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  padding-bottom: 16px;
+}
+
+.footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-contact-list-p {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: white;
+  opacity: 0.6;
+}
+
+.footer-contact-list-a {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-social-list > li {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-social-p {
+  font-family: "Prata";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  color: white;
+  padding-bottom: 16px;
+}
+
+.footer-social-list > li > p {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: white;
+}
+
+.footer-button-group {
+  display: none;
+}
+/* End Footer */
 
 @media only screen and (max-width: 1199px) {
   /* Start Header section */
@@ -438,7 +547,7 @@
     font-size: 32px;
     line-height: 140%;
   }
-  
+
   .summary__content-name {
     font-size: 52px;
     line-height: 120%;
@@ -519,6 +628,46 @@
   }
 
   /* End Patiens Section */
+
+  /* Start Footer Section */
+
+  .footer-position {
+    flex-direction: column;
+    padding: 0;
+    gap: 24px;
+    padding-bottom: 30px;
+  }
+
+  .footer-logo-text {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer-down-text {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-contact-button-position {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 38px;
+  }
+
+  .footer-button-group {
+    display: flex;
+    gap: 8px;
+  }
+
+  .footer-button-svg {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    width: 40px;
+    height: 40px;
+    border: none;
+  }
+
+  /* End Footer Section */
 }
 
 @media only screen and (max-width: 767px) {
@@ -538,18 +687,18 @@
 
   /* End Summary section */
 
-    /* Start Quote Section */
+  /* Start Quote Section */
 
-    .quote__container {
-      padding-top: 64px;
-      padding-bottom: 64px;
-    }
+  .quote__container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 
-    .quote__image {
-      display: none;
-    }
-  
-    /* End Quote Section */
+  .quote__image {
+    display: none;
+  }
+
+  /* End Quote Section */
 }
 
 @media only screen and (max-width: 599px) {
@@ -603,7 +752,7 @@
     font-size: 24px;
     line-height: 140%;
   }
-  
+
   .summary__content-name {
     font-size: 42px;
     line-height: 120%;
@@ -616,7 +765,7 @@
   /* End Summary section */
 
   /* Start About Details Section */
-  
+
   .about-details__image {
     width: 100%;
   }
@@ -626,7 +775,6 @@
   }
 
   /* End About Details Section */
-
 
   /* Start Patients Section */
 
@@ -643,4 +791,22 @@
   }
 
   /* End Patients Section */
+
+  .footer-position-logo-button {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer-contact-button-position {
+    flex-direction: column;
+  }
+
+  .footer-contact-postion {
+    flex-direction: column;
+  }
+
+  .footer-down-text {
+    flex-direction: column;
+  }
 }
