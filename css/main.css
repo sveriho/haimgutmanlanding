@@ -29,13 +29,13 @@
 .header__burger-btn {
   width: 32px;
   height: 32px;
-  background-image: url('../assets/images/svg/menu.svg');
+  background-image: url("../assets/images/svg/menu.svg");
   border: none;
   cursor: pointer;
 }
 
 .header__burger-btn.active {
-  background-image: url('../assets/images/svg/cross.svg');
+  background-image: url("../assets/images/svg/cross.svg");
 }
 
 .header__logo {
@@ -83,15 +83,15 @@
 }
 
 .header__socials-icon.whatsapp {
-  background-image: url('../assets/images/svg/WhatsApp.svg');
+  background-image: url("../assets/images/svg/WhatsApp.svg");
 }
 
 .header__socials-icon.telegram {
-  background-image: url('../assets/images/svg/Telegram.svg');
+  background-image: url("../assets/images/svg/Telegram.svg");
 }
 
 .header__socials-icon.viber {
-  background-image: url('../assets/images/svg/Viber.svg');
+  background-image: url("../assets/images/svg/Viber.svg");
 }
 
 .lang-selector {
@@ -109,7 +109,7 @@
   padding-top: 78px; /* To compensate fixed header height */
   padding-bottom: 25px;
   min-height: 600px;
-  background: url('../assets/images/summary-bg.jpg') no-repeat;
+  background: url("../assets/images/summary-bg.jpg") no-repeat;
   background-size: cover;
   overflow-x: hidden;
 }
@@ -169,7 +169,7 @@
 }
 
 .about__value {
-  font-family: 'Prata';
+  font-family: "Prata";
   font-size: 28px;
   line-height: 160%;
 }
@@ -223,7 +223,8 @@
 /* Start Quote Section */
 
 .quote {
-  background: url('../assets/images/bg-quote.png') no-repeat var(--color-gray-bg);
+  background: url("../assets/images/bg-quote.png") no-repeat
+    var(--color-gray-bg);
   background-position: top left 50px;
 }
 
@@ -318,7 +319,7 @@
 }
 
 .patients__stage-subtitle::before {
-  content: url('../assets/images/svg/circle.svg');
+  content: url("../assets/images/svg/circle.svg");
   margin-right: 15px;
   width: 32px;
   height: 32px;
@@ -350,6 +351,85 @@
 }
 
 /* End Patiens Section */
+
+/* Start Sectiob Reviews */
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 18px;
+}
+.slider {
+  width: 80%; /* Ширина слайдера */
+  text-align: center;
+}
+.slider div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.custom-prev,
+.custom-next {
+  color: black;
+  cursor: pointer;
+  border-radius: 46px;
+  background: var(--Main-bg, #fbdce1);
+  padding: 10px;
+  width: 48px;
+  height: 48px;
+}
+.list-star {
+  display: flex;
+}
+.slick-initialized .slick-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slide-text-top {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%;
+}
+.slide-text-middle {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.slide-text-bottom {
+  color: var(--Gray-500, #707070);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.slider-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-reviews-h {
+  font-family: "Prata";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.reviews {
+  padding: 91px 25px;
+}
+
+.slick-dots {
+  display: none; /* Скрываем точки по умолчанию */
+}
+
+/* End Section Reviews */
 
 /* Start Contacts Section */
 
@@ -429,7 +509,7 @@
 footer {
   padding-top: 80px;
   padding-bottom: 35px;
-  background: url('../assets/images/bg-waves.png') var(--color-footer) no-repeat;
+  background: url("../assets/images/bg-waves.png") var(--color-footer) no-repeat;
   background-position: top right;
   color: var(--color-white);
 }
@@ -456,7 +536,7 @@ footer {
 
 .footer__subtitle {
   padding-bottom: 16px;
-  font-family: 'Prata';
+  font-family: "Prata";
   font-size: 24px;
   line-height: 120%;
 }
@@ -673,9 +753,28 @@ footer {
 
   /* End Patiens Section */
 
-  /* Start Contacts Section */
+  /* Start Reviews Section */
 
-  /* Start Section Contact */
+  .slick-dots {
+    display: block;
+  }
+
+  .slick-dots li button:before {
+    font-size: 12px; /* Размер точек */
+  }
+
+  .custom-prev,
+  .custom-next {
+    display: none;
+  }
+
+  .section-reviews-h {
+    font-size: 48px;
+  }
+
+  /* End Reviews Section */
+
+  /* Start Contacts Section */
 
   .contacts {
     padding-top: 0;
