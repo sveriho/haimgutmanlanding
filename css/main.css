@@ -351,6 +351,51 @@
 
 /* End Patiens Section */
 
+/* Start Reviews Section */
+
+.reviews {
+  padding: 60px 25px;
+}
+
+.reviews__slider-container {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.reviews__slider-container > .slider {
+  width: 80%;
+}
+
+.reviews .review-card {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.reviews .review-card__title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 180%;
+}
+
+.reviews .review-card__text {
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.reviews .review-card__author {
+  color: var(--color-gray);
+  font-size: 15px;
+  line-height: 160%;
+}
+
+/* End Reviews Section */
+
 /* Start Contacts Section */
 
 .contacts {
@@ -673,9 +718,15 @@ footer {
 
   /* End Patiens Section */
 
-  /* Start Contacts Section */
+  /* Start Reviews Section */
 
-  /* Start Section Contact */
+  .reviews__slider-container > .slider {
+    width: 100%;
+  }
+
+  /* End Reviews Section */
+
+  /* Start Contacts Section */
 
   .contacts {
     padding-top: 0;

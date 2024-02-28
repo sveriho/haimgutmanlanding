@@ -109,6 +109,54 @@ li {
   opacity: 0.6;
 }
 
+/* Slick */
+
+.slider__btn {
+  padding: 10px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  background-color: var(--color-gray-100);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider__btn:hover {
+  background-color: var(--color-pink);
+}
+
+.slider__btn-prev {
+  background-image: url('../assets/images/svg/slider-arrow-left.svg');
+}
+
+.slider__btn-prev:hover {
+  background-image: url('../assets/images/svg/slider-arrow-left-hover.svg');
+}
+
+.slider__btn-next {
+  background-image: url('../assets/images/svg/slider-arrow-right.svg');
+}
+
+.slider__btn-next:hover {
+  background-image: url('../assets/images/svg/slider-arrow-right-hover.svg');
+}
+
+.slick-dots li {
+  margin: 0 !important;
+}
+
+.slick-dots li button:before {
+  color: var(--color-gray-100) !important;
+  font-size: 12px !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--color-primary) !important;
+}
+
 @media only screen and (max-width: 991px) {
   h1 {
     font-size: 52px;
@@ -116,6 +164,10 @@ li {
 
   h2 {
     font-size: 48px;
+  }
+
+  .slider__btn {
+    display: none !important;
   }
 }
 
