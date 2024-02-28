@@ -149,7 +149,7 @@ li {
 
 .slick-dots li button:before {
   color: var(--color-gray-100) !important;
-  font-size: 12px !important;
+  font-size: 36px !important;
   opacity: 1 !important;
 }
 
