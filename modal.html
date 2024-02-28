@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Стили модального окна */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      /* Стили содержимого модального окна */
+      .modal-content {
+        background-color: #fff;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        max-width: 415px;
+        padding: 48px;
+        border-radius: 20px;
+      }
+
+      .modal-content > h2 {
+        font-family: "Prata";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      form > input {
+        border-radius: 8px;
+        background: #ececec;
+        padding: 12px;
+        width: 90%;
+        margin-bottom: 20px;
+      }
+
+      form > input:hover {
+        cursor: pointer;
+      }
+
+      form > label {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        color: #707070;
+      }
+
+      form > div {
+        display: flex;
+        gap: 20px;
+      }
+
+      form > div > button {
+        border-radius: 20px;
+        background: #720d1e;
+        padding: 12px 16px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        color: white;
+        max-height: 46px;
+        cursor: pointer;
+      }
+
+      form > div > p {
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        color: #707070;
+      }
+
+      form > div > p > a {
+        color: #9c1a30;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+      }
+
+      /* Стили для кнопки закрытия модального окна */
+      .close {
+        color: #707070;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .error {
+        color: yellow;
+      }
+
+      /* Стили для сообщения об успешной отправке */
+      .success-message {
+        background-color: #fff;
+        color: black;
+        padding: 48px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: 294px;
+      }
+
+      .success-message button {
+        border-radius: 20px;
+        background: #720d1e;
+        padding: 12px 16px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        color: white;
+        max-height: 46px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Кнопка для открытия модального окна -->
+    <button id="openModal">Открыть форму</button>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+      <!-- Содержимое модального окна -->
+      <div class="modal-content">
+        <span class="close"
+          ><img src="./assets/images/Cross.png" alt=""
+        /></span>
+        <h2>Оставить заявку</h2>
+        <form id="form">
+          <label for="name">Ваше имя*</label><br />
+          <input type="text" id="name" name="name" required /><br />
+
+          <label for="email">Электронная почта</label><br />
+          <input type="email" id="email" name="email" /><br />
+
+          <label for="phone">Телефон*</label><br />
+          <input
+            type="tel"
+            id="phone"
+            placeholder="+"
+            name="phone"
+            required
+          /><br />
+          <span id="nameError" class="error"></span>
+          <span id="emailError" class="error"></span>
+          <span id="phoneError" class="error"></span>
+          <div>
+            <p>
+              Заполняя данную форму вы соглашаетесь с
+              <a href="#">политикой конфиденциальности</a>
+            </p>
+            <button type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Отдельное модальное окно для сообщения об успешной отправке -->
+    <div id="successModal" class="modal">
+      <div class="modal-content success-message">
+        <h2>Отправлено!</h2>
+        <p>Мы уже работаем над вашей заявкой, ожидайте обратной связи!</p>
+        <button id="closeSuccessMessage">Закрыть</button>
+      </div>
+    </div>
+
+    <script>
+      // Получаем модальное окно
+      var modal = document.getElementById("modal");
+      var successModal = document.getElementById("successModal");
+
+      // Получаем кнопку, открывающую модальное окно
+      var btn = document.getElementById("openModal");
+
+      // Получаем элемент для закрытия модального окна
+      var span = document.getElementsByClassName("close")[0];
+
+      // Когда пользователь кликает по кнопке, открываем модальное окно
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // Когда пользователь кликает на элемент закрытия (x), закрываем модальное окно
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // Когда пользователь кликает вне модального окна, закрываем его
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      // Валидация формы
+      var form = document.getElementById("form");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Отменяем стандартное действие формы (отправку)
+        var name = document.getElementById("name").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var phone = document.getElementById("phone").value.trim();
+
+        var nameError = document.getElementById("nameError");
+        var emailError = document.getElementById("emailError");
+        var phoneError = document.getElementById("phoneError");
+
+        nameError.textContent = "";
+        emailError.textContent = "";
+        phoneError.textContent = "";
+
+        if (name === "") {
+          nameError.textContent = "Пожалуйста, введите ваше имя";
+          return; // Прекращаем выполнение функции, если есть ошибки
+        }
+
+        if (!/^[a-zA-Zа-яА-ЯЁё\s]+$/.test(name)) {
+          nameError.textContent = "Ошибка: используются запрещенные символы";
+          return; // Прекращаем выполнение функции, если есть ошибки
+        }
+
+        // Добавьте здесь валидацию для email и телефона по необходимости
+
+        if (phone === "") {
+          phoneError.textContent = "Пожалуйста, введите ваш телефон";
+          return; // Прекращаем выполнение функции, если есть ошибки
+        }
+
+        if (!/^[\d\s+\-()]+$/.test(phone)) {
+          phoneError.textContent = "Некорректный формат номера телефона";
+          return; // Прекращаем выполнение функции, если есть ошибки
+        }
+
+        // Если все данные введены корректно, показываем сообщение об успешной отправке
+        modal.style.display = "none"; // Скрываем форму
+        successModal.style.display = "block"; // Показываем окно с сообщением об успешной отправке
+
+        document.getElementById("form").reset();
+      });
+
+      // Кнопка "Закрыть" в сообщении об успешной отправке
+      var closeSuccessMessageButton = document.getElementById(
+        "closeSuccessMessage"
+      );
+      closeSuccessMessageButton.addEventListener("click", function () {
+        successModal.style.display = "none"; // Закрываем окно с сообщением об успешной отправке
+      });
+    </script>
+  </body>
+</html>
