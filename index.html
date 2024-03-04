@@ -394,12 +394,11 @@
     </section>
 
     <!-- Reviews -->
-    <section class="reviews">
+    <section id="reviews" class="reviews">
       <div class="container">
         <h2>Отзывы</h2>
         <div class="reviews__slider-container">
-          <button class="slider__btn slider__btn-prev">
-          </button>
+          <button class="slider__btn slider__btn-prev slider__reviews-btn-prev"></button>
           <div id="reviews-slider" class="slider reviews-slider">
             <div>
               <div class="review-card">
@@ -453,8 +452,78 @@
               </div>
             </div>
           </div>
-          <button class="slider__btn slider__btn-next">
-          </button>
+          <button class="slider__btn slider__btn-next slider__reviews-btn-next"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section id="partners" class="partners">
+      <div class="container">
+        <div class="partners__title-container">
+          <h2>Партнёры</h2>
+          <div class="partners__btn-group">
+            <button class="slider__btn slider__btn-prev slider__partners-btn-prev"></button>
+            <button class="slider__btn slider__btn-next slider__partners-btn-next"></button>
+          </div>
+        </div>
+
+        <div class="partners__slider-container">
+          <div id="partners-slider" class="slider partners-slider">
+            <div>
+              <a class="partners__link" href="https://herzliya-clinic.com/" target="_blank">
+                <div class="partner-card">
+                  <img src="./assets/images/logo-herzliya.png" alt="" />
+                  <div class="partner-card__label-container">
+                    <p class="partner-card__name">Медицинский центр Герцлия</p>
+                    <p class="partner-card__location">Герцлия, Израиль</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a class="partners__link" href="https://www.raphaelhospitals.co.il/ru/" target="_blank">
+                <div class="partner-card">
+                  <img src="./assets/images/logo-rafael.png" alt="" />
+                  <div class="partner-card__label-container">
+                    <p class="partner-card__name">Больница Рафаэль</p>
+                    <p class="partner-card__location">Тель-Авив, Израиль</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a class="partners__link" href="https://ichilov-clinic.gov.il/ru/" target="_blank">
+                <div class="partner-card">
+                  <img src="./assets/images/logo-sourasky.png" alt="" />
+                  <div class="partner-card__label-container">
+                    <p class="partner-card__name">Медицинский центр Ихилов</p>
+                    <p class="partner-card__location">Тель-Авив, Израиль</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a class="partners__link" href="https://assutahospital.org/" target="_blank">
+                <div class="partner-card">
+                  <img src="./assets/images/logo-assuta.png" alt="" />
+                  <div class="partner-card__label-container">
+                    <p class="partner-card__name">Госпиталь Ассута</p>
+                    <p class="partner-card__location">Тель-Авив, Израиль</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <div class="partner-card">
+                <img src="./assets/images/logo-herzliya.png" alt="" />
+                <div class="partner-card__label-container">
+                  <p class="partner-card__name">Еще партнер</p>
+                  <p class="partner-card__location">Место</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
