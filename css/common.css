@@ -111,6 +111,11 @@ li {
 
 /* Slick */
 
+.slider__btn-group {
+  display: flex;
+  gap: 5px;
+}
+
 .slider__btn {
   padding: 10px;
   width: 48px;
