@@ -48,4 +48,36 @@ $(document).ready(function () {
       },
     ],
   });
+
+  $('#certificates-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: $('.slider__certificates-btn-prev'),
+    nextArrow: $('.slider__certificates-btn-next'),
+    autoplay: false,
+    dots: false,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 599,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+        },
+      },
+    ],
+  });
 });
