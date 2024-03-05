@@ -1,735 +1,831 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
 
-  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slick-1.8.1.css" />
+    <link rel="stylesheet" href="css/slick-theme-1.8.1.css" />
 
-  <link rel="stylesheet" href="css/slick-1.8.1.css">
-  <link rel="stylesheet" href="css/slick-theme-1.8.1.css">
+    <title>Хаим Гутман</title>
+  </head>
 
-  <title>Хаим Гутман</title>
-</head>
-
-<body>
-  <header id="header" class="header">
-    <div class="header__container container">
-      <div class="header__burger">
-        <button class="header__burger-btn" type="button"></button>
-      </div>
-      <img class="header__logo" src="./assets/images/svg/logo.svg" alt="Logo" />
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-listitem title">
-            <span class="font-prata">Меню</span>
+  <body>
+    <header id="header" class="header">
+      <div class="header__container container">
+        <div class="header__burger">
+          <button class="header__burger-btn" type="button"></button>
+        </div>
+        <img
+          class="header__logo"
+          src="./assets/images/svg/logo.svg"
+          alt="Logo"
+        />
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-listitem title">
+              <span class="font-prata">Меню</span>
+            </li>
+            <li class="header__nav-listitem">
+              <a class="header__nav-link" href="#about">О профессоре</a>
+            </li>
+            <li class="header__nav-listitem">
+              <a class="header__nav-link" href="#services">Услуги</a>
+            </li>
+            <li class="header__nav-listitem">
+              <a class="header__nav-link" href="#patients"
+                >Иностранные пациенты</a
+              >
+            </li>
+            <li class="header__nav-listitem">
+              <a class="header__nav-link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="header__nav-listitem">
+              <a class="header__nav-link" href="#partners">Партнеры</a>
+            </li>
+            <li class="header__nav-listitem">
+              <a class="header__nav-link" href="#certificates">Сертификаты</a>
+            </li>
+            <li class="header__nav-listitem">
+              <a class="header__nav-link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__socials">
+          <li>
+            <a class="header__socials-icon whatsapp" href="#"></a>
           </li>
-          <li class="header__nav-listitem">
-            <a class="header__nav-link" href="#about">О профессоре</a>
+          <li>
+            <a class="header__socials-icon telegram" href="#"></a>
           </li>
-          <li class="header__nav-listitem">
-            <a class="header__nav-link" href="#services">Услуги</a>
+          <li>
+            <a class="header__socials-icon viber" href="#"></a>
           </li>
-          <li class="header__nav-listitem">
-            <a class="header__nav-link" href="#patients">Иностранные пациенты</a>
-          </li>
-          <li class="header__nav-listitem">
-            <a class="header__nav-link" href="#reviews">Отзывы</a>
-          </li>
-          <li class="header__nav-listitem">
-            <a class="header__nav-link" href="#partners">Партнеры</a>
-          </li>
-          <li class="header__nav-listitem">
-            <a class="header__nav-link" href="#certificates">Сертификаты</a>
-          </li>
-          <li class="header__nav-listitem">
-            <a class="header__nav-link" href="#contacts">Контакты</a>
+          <li>
+            <select class="lang-selector">
+              <option value="1">RU</option>
+              <option value="2">ENG</option>
+            </select>
           </li>
         </ul>
-      </nav>
-      <ul class="header__socials">
-        <li>
-          <a class="header__socials-icon whatsapp" href="#"></a>
-        </li>
-        <li>
-          <a class="header__socials-icon telegram" href="#"></a>
-        </li>
-        <li>
-          <a class="header__socials-icon viber" href="#"></a>
-        </li>
-        <li>
-          <select class="lang-selector">
-            <option value="1">RU</option>
-            <option value="2">ENG</option>
-          </select>
-        </li>
-      </ul>
-    </div>
-  </header>
+      </div>
+    </header>
 
-  <main>
-    <!-- Summary -->
-    <section id="home" class="summary">
-      <div class="container summary__container flex relative">
-        <div class="summary__content">
-          <div class="flex-empty"></div>
-          <div class="common">
-            <p class="summary__content-degree font-prata">Профессор</p>
-            <h1 class="summary__content-name">Хаим Гутман</h1>
-            <p class="summary__content-description">
-              Известный онколог, активно участвует в работе медицинских союзов,
-              включая Союз врачей Израиля, Израильскую ассоциацию хирургов,
-              Израильское общество хирургической онкологии, Европейскую
-              ассоциацию онкохирургии, Общество онкохирургии США.
+    <main>
+      <!-- Summary -->
+      <section id="home" class="summary">
+        <div class="container summary__container flex relative">
+          <div class="summary__content">
+            <div class="flex-empty"></div>
+            <div class="common">
+              <p class="summary__content-degree font-prata">Профессор</p>
+              <h1 class="summary__content-name">Хаим Гутман</h1>
+              <p class="summary__content-description">
+                Известный онколог, активно участвует в работе медицинских
+                союзов, включая Союз врачей Израиля, Израильскую ассоциацию
+                хирургов, Израильское общество хирургической онкологии,
+                Европейскую ассоциацию онкохирургии, Общество онкохирургии США.
+              </p>
+              <div class="btn-group">
+                <button class="btn btn-primary" type="button">
+                  Записаться на Консультацию
+                </button>
+                <button class="btn btn-secondary" type="button">
+                  О профессоре
+                </button>
+              </div>
+            </div>
+            <ul class="about">
+              <li>
+                <p class="about__label">Опыт</p>
+                <p class="about__value">40 лет</p>
+              </li>
+              <li>
+                <p class="about__label">Пациентов</p>
+                <p class="about__value">18 000+</p>
+              </li>
+              <li>
+                <p class="about__label">Сертификатов</p>
+                <p class="about__value">35+</p>
+              </li>
+            </ul>
+          </div>
+          <div class="summary__photo">
+            <img src="./assets/images/photo.png" alt="Photo" />
+          </div>
+          <div class="summary__photo-mobile">
+            <img src="./assets/images/photo-mobile.png" alt="Photo" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about-details">
+        <div class="about-details__container container">
+          <div class="about-details__title-container">
+            <h2 class="about-details__title text-main-about">
+              О профессоре Хаиме Гутмане
+            </h2>
+            <img
+              class="about-details__image"
+              src="./assets/images/work-process.png"
+              alt="work-process"
+            />
+          </div>
+          <div class="about-details__content">
+            <p class="about-details__paragraph">
+              Профессор Хаим Гутман, известный онколог, активно участвует в
+              работе медицинских союзов, включая Союз врачей Израиля,
+              Израильскую ассоциацию хирургов, Израильское общество
+              хирургической онкологии, Европейскую ассоциацию онкохирургии,
+              Общество онкохирургии США.
             </p>
-            <div class="btn-group">
+            <p class="about-details__paragraph">
+              Профессор Гутман окончил медицинскую школу при медицинском
+              факультете имени Саклера, Тель-Авивского университета с отличием и
+              получил лицензию на общую хирургию. После этого он прошел обучение
+              в онкологическом центре MD Anderson в Хьюстоне (США) в качестве
+              научного сотрудника и соисследователя в области онкологической
+              хирургии. Он является преподавателем на медицинском факультете
+              Тель-Авивского университета, автором множества научных работ,
+              статей и публикаций в известных медицинских журналах. За свои
+              научные достижения он был удостоен множества наград и стипендий,
+              включая премию Фонда онкологического центра Андерсона в США в 1992
+              году.
+            </p>
+            <p class="about-details__paragraph">
+              В настоящее время Хаим Гутман занимает должность ведущего хирурга
+              в одной из лучших клиник страны и специализируется на
+              онкологических заболеваниях. Он имеет более 35 лет успешной
+              практики в лечении сложных клинических случаев. Его специализация
+              включает лечение множества патологий, таких как рак молочной
+              железы, опухоли кожи и мягких тканей (меланома, саркома),
+              проведение люмпэктомии, тотальной мастэктомии, хирургия и
+              реконструкция молочных желез.
+            </p>
+            <ul class="about-details__list">
+              <li class="about-details__listitem listitem">
+                <span>
+                  Хирургическое лечение онкологических заболеваний, включая рак
+                  молочной железы, разработка новаторских хирургических методик
+                  и тестирование их эффективности в клинической практике.
+                </span>
+              </li>
+              <li class="about-details__listitem listitem">
+                <span>
+                  Применение современных малоинвазивных методов для удаления
+                  злокачественных опухолей кожи, таких как плоскоклеточный рак,
+                  меланома и базалиома.
+                </span>
+              </li>
+              <li class="about-details__listitem listitem">
+                <span>
+                  Использование малоинвазивных методов хирургического удаления
+                  опухолей в органах пищеварительной системы.
+                </span>
+              </li>
+              <li class="about-details__listitem listitem">
+                <span>
+                  Терапевтическое лечение саркомы мягких ткане и исследования в
+                  области инструментальной онкодиагностики, органосохраняющей
+                  хирургии при лечении рака молочной железы и других видов
+                  онкологических заболеваний.
+                </span>
+              </li>
+            </ul>
+            <div class="about-details__btn-container">
               <button class="btn btn-primary" type="button">
                 Записаться на Консультацию
               </button>
-              <button class="btn btn-secondary" type="button">
-                О профессоре
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quote -->
+      <section class="quote">
+        <div class="quote__container container">
+          <div class="quote__content">
+            <p class="quote__content-label">Цитата профессора</p>
+            <p class="quote__content-text font-prata">
+              В своей практике применяю передовые методы диагностики,
+              современные медицинские технологии и протоколы лечения
+            </p>
+            <p class="quote__content-label">Хаим Гутман</p>
+          </div>
+          <div class="quote__image">
+            <img
+              class="quote__image-desktop"
+              src="./assets/images/photo-quote.png"
+              alt=""
+            />
+            <img
+              class="quote__image-tablet"
+              src="./assets/images/photo-quote-tablet.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="services">
+        <div class="services__container container">
+          <h2 class="services__title">Услуги профессора Хаима Гутмана</h2>
+          <div class="services__content">
+            <p class="services__content-subtitle">
+              Профессор Хаим Гутман сотрудничает с крупнейшими и наиболее
+              известными медицинскими клиниками в Израиле, в том числе
+              Тель-Авивский медицинский центр Ихилов (Сураски), медикал центр
+              «Герцлия», частная клиника «Рафаэль». Пациент может выбрать лучшую
+              клинику, опираясь на отзывы, рейтинги, изучив репутацию мед
+              учреждения, а также руководствуясь своим опытом и личными
+              впечатлениями.
+            </p>
+            <ul class="services__content-list">
+              <li class="services__content-listitem listitem">
+                <span>
+                  Хирургическое лечение онкологических заболеваний, включая рак
+                  молочной железы, разработка новаторских хирургических методик
+                  и тестирование их эффективности в клинической практике.
+                </span>
+              </li>
+              <li class="services__content-listitem listitem">
+                <span>
+                  Применение современных малоинвазивных методов для удаления
+                  злокачественных опухолей кожи, таких как плоскоклеточный рак,
+                  меланома и базалиома.
+                </span>
+              </li>
+              <li class="services__content-listitem listitem">
+                <span>
+                  Использование малоинвазивных методов хирургического удаления
+                  опухолей в органах пищеварительной системы.
+                </span>
+              </li>
+              <li class="services__content-listitem listitem">
+                <span>
+                  Терапевтическое лечение саркомы мягких ткане и исследования в
+                  области инструментальной онкодиагностики, органосохраняющей
+                  хирургии при лечении рака молочной железы и других видов
+                  онкологических заболеваний.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Foreign Patients -->
+      <section id="patients" class="patients">
+        <div class="patients__container container">
+          <div class="patients__common">
+            <h2 class="patients__title">Отдел приема иностранных пациентов</h2>
+            <p>
+              В своей практике он применяет передовые методы диагностики,
+              современные медицинские технологии и протоколы лечения, а также
+              высококачественные хирургические инструменты и высокоэффективные
+              лекарственные препараты.
+            </p>
+          </div>
+          <div class="patients__stages">
+            <h3 class="patients__stage-subtitle">
+              1. Выбор лучшего медицинского учреждения
+            </h3>
+            <p class="patients__stage-content">
+              Профессор Хаим Гутман сотрудничает с крупнейшими и наиболее
+              известными медицинскими клиниками в Израиле, в том числе
+              Тель-Авивский медицинский центр Ихилов (Сураски), медикал центр
+              «Герцлия», частная клиника «Рафаэль». Пациент может выбрать лучшую
+              клинику, опираясь на отзывы, рейтинги, изучив репутацию мед
+              учреждения, а также руководствуясь своим опытом и личными
+              впечатлениями. 
+            </p>
+            <h3 class="patients__stage-subtitle">
+              2. Планирование и организация поездки
+            </h3>
+            <div class="patients__stage-content">
+              <p>
+                Компания берет на себя решение всех организационных вопросов:
+              </p>
+              <ul class="patients__stage-list">
+                <li class="listitem">
+                  <span>
+                    Помощь в оформлении визы и бронировании перелета.
+                  </span>
+                </li>
+                <li class="listitem">
+                  <span>
+                    Помощь в аренде жилья – бронирование отелей, поиск и аренда
+                    квартиры.
+                  </span>
+                </li>
+                <li class="listitem">
+                  <span>
+                    Трансфер – встреча в аэропорту, поездки в клинику.
+                  </span>
+                </li>
+                <li class="listitem">
+                  <span> Перевод медицинских документов. </span>
+                </li>
+                <li class="listitem">
+                  <span>
+                    Планирование консультаций, обследований, лечения.
+                  </span>
+                </li>
+              </ul>
+              <p>
+                Мы готовы предложить вам индивидуальный пакет медицинского
+                обслуживания, полностью соответствующий вашим личным пожеланиям
+                и медицинским потребностям.
+              </p>
+            </div>
+            <h3 class="patients__stage-subtitle">
+              3. Консультация по прибытии в Израиль
+            </h3>
+            <p class="patients__stage-content">
+              Консультация с врачом проходит по приезду пациента в заранее
+              назначенное время. Для консультации у пациента должны быть на
+              руках анализы крови, включая определение опухолевых маркеров,
+              данные исследования гистологического материала, обзорная ПЭТ-КТ
+              или КТ трех областей, заключение от онколога (где пациент ранее
+              проходил обследование, лечение). На этом этапе происходит
+              обсуждение плана диагностики и лечения на основании имеющихся
+              результатов обследования и информации о текущем состоянии
+              пациента, его жалоб на момент обращения.
+            </p>
+            <h3 class="patients__stage-subtitle">4. Лечение и реабилитация</h3>
+            <p class="patients__stage-content">
+              Профессор Хаим Гутман использует ресурсы ведущих клиник для
+              диагностики, лечения и послеоперационного восстановления пациента.
+              Каждому пациенту будет обеспечен самый профессиональный и
+              качественный уход, назначен координатор, который станет основным
+              контактным лицом во время пребывания в Израиле. Он будет
+              сопровождать пациента на консультации и давать качественный
+              перевод врачу и пациенту, окажет всю необходимую помощь и
+              поддержку, будет контролировать своевременное выполнение всех
+              этапов лечения пациента и следить за соблюдением его интересов.
+            </p>
+            <h3 class="patients__stage-subtitle align-end">
+              5. Обследование после курса лечения
+            </h3>
+            <p class="patients__stage-content no-border">
+              По завершении лечения врач дает пациенту все необходимые выписки,
+              заключения и рекомендации относительно дальнейшего лечения,
+              плановых обследований, реабилитации. Также пациент может получить
+              медицинскую помощь, консультативную поддержку врача после
+              возвращения домой.
+            </p>
+            <div class="patients__button-container">
+              <button class="btn btn-primary" type="button">
+                Записаться на Консультацию
               </button>
             </div>
           </div>
-          <ul class="about">
-            <li>
-              <p class="about__label">Опыт</p>
-              <p class="about__value">40 лет</p>
-            </li>
-            <li>
-              <p class="about__label">Пациентов</p>
-              <p class="about__value">18 000+</p>
-            </li>
-            <li>
-              <p class="about__label">Сертификатов</p>
-              <p class="about__value">35+</p>
-            </li>
-          </ul>
         </div>
-        <div class="summary__photo">
-          <img src="./assets/images/photo.png" alt="Photo" />
-        </div>
-        <div class="summary__photo-mobile">
-          <img src="./assets/images/photo-mobile.png" alt="Photo" />
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About -->
-    <section id="about" class="about-details">
-      <div class="about-details__container container">
-        <div class="about-details__title-container">
-          <h2 class="about-details__title text-main-about">О профессоре Хаиме Гутмане</h2>
-          <img
-            class="about-details__image"
-            src="./assets/images/work-process.png"
-            alt="work-process"
-          />
-        </div>
-        <div class="about-details__content">
-          <p class="about-details__paragraph">
-            Профессор Хаим Гутман, известный онколог, активно участвует в работе
-            медицинских союзов, включая Союз врачей Израиля, Израильскую
-            ассоциацию хирургов, Израильское общество хирургической онкологии,
-            Европейскую ассоциацию онкохирургии, Общество онкохирургии США.
-          </p>
-          <p class="about-details__paragraph">
-            Профессор Гутман окончил медицинскую школу при медицинском
-            факультете имени Саклера, Тель-Авивского университета с отличием и
-            получил лицензию на общую хирургию. После этого он прошел обучение в
-            онкологическом центре MD Anderson в Хьюстоне (США) в качестве
-            научного сотрудника и соисследователя в области онкологической
-            хирургии. Он является преподавателем на медицинском факультете
-            Тель-Авивского университета, автором множества научных работ, статей
-            и публикаций в известных медицинских журналах. За свои научные
-            достижения он был удостоен множества наград и стипендий, включая
-            премию Фонда онкологического центра Андерсона в США в 1992 году.
-          </p>
-          <p class="about-details__paragraph">
-            В настоящее время Хаим Гутман занимает должность ведущего хирурга в
-            одной из лучших клиник страны и специализируется на онкологических
-            заболеваниях. Он имеет более 35 лет успешной практики в лечении
-            сложных клинических случаев. Его специализация включает лечение
-            множества патологий, таких как рак молочной железы, опухоли кожи и
-            мягких тканей (меланома, саркома), проведение люмпэктомии, тотальной
-            мастэктомии, хирургия и реконструкция молочных желез.
-          </p>
-          <ul class="about-details__list">
-            <li class="about-details__listitem listitem">
-              <span>
-                Хирургическое лечение онкологических заболеваний, включая рак
-                молочной железы, разработка новаторских хирургических методик и
-                тестирование их эффективности в клинической практике.
-              </span>
-            </li>
-            <li class="about-details__listitem listitem">
-              <span>
-                Применение современных малоинвазивных методов для удаления
-                злокачественных опухолей кожи, таких как плоскоклеточный рак,
-                меланома и базалиома.
-              </span>
-            </li>
-            <li class="about-details__listitem listitem">
-              <span>
-                Использование малоинвазивных методов хирургического удаления
-                опухолей в органах пищеварительной системы.
-              </span>
-            </li>
-            <li class="about-details__listitem listitem">
-              <span>
-                Терапевтическое лечение саркомы мягких ткане и исследования в
-                области инструментальной онкодиагностики, органосохраняющей
-                хирургии при лечении рака молочной железы и других видов
-                онкологических заболеваний.
-              </span>
-            </li>
-          </ul>
-          <div class="about-details__btn-container">
-            <button class="btn btn-primary" type="button">
-              Записаться на Консультацию
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quote -->
-    <section class="quote">
-      <div class="quote__container container">
-        <div class="quote__content">
-          <p class="quote__content-label">Цитата профессора</p>
-          <p class="quote__content-text font-prata">
-            В своей практике применяю передовые методы диагностики,
-            современные медицинские технологии и протоколы лечения
-          </p>
-          <p class="quote__content-label">Хаим Гутман</p>
-        </div>
-        <div class="quote__image">
-          <img
-            class="quote__image-desktop"
-            src="./assets/images/photo-quote.png"
-            alt=""
-          />
-          <img
-            class="quote__image-tablet"
-            src="./assets/images/photo-quote-tablet.png"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="services">
-      <div class="services__container container">
-        <h2 class="services__title">
-          Услуги профессора Хаима Гутмана
-        </h2>
-        <div class="services__content">
-          <p class="services__content-subtitle">
-            Профессор Хаим Гутман сотрудничает с крупнейшими и наиболее
-            известными медицинскими клиниками в Израиле, в том числе
-            Тель-Авивский медицинский центр Ихилов (Сураски), медикал центр
-            «Герцлия», частная клиника «Рафаэль». Пациент может выбрать
-            лучшую клинику, опираясь на отзывы, рейтинги, изучив репутацию
-            мед учреждения, а также руководствуясь своим опытом и личными
-            впечатлениями.
-          </p>
-          <ul class="services__content-list">
-            <li class="services__content-listitem listitem">
-              <span>
-                Хирургическое лечение онкологических заболеваний, включая
-                рак молочной железы, разработка новаторских хирургических
-                методик и тестирование их эффективности в клинической
-                практике.
-              </span>
-            </li>
-            <li class="services__content-listitem listitem">
-              <span>
-                Применение современных малоинвазивных методов для удаления
-                злокачественных опухолей кожи, таких как плоскоклеточный
-                рак, меланома и базалиома.
-              </span>
-            </li>
-            <li class="services__content-listitem listitem">
-              <span>
-                Использование малоинвазивных методов хирургического удаления
-                опухолей в органах пищеварительной системы.
-              </span>
-            </li>
-            <li class="services__content-listitem listitem">
-              <span>
-                Терапевтическое лечение саркомы мягких ткане и исследования
-                в области инструментальной онкодиагностики,
-                органосохраняющей хирургии при лечении рака молочной железы
-                и других видов онкологических заболеваний.
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Foreign Patients -->
-    <section id="patients" class="patients">
-      <div class="patients__container container">
-        <div class="patients__common">
-          <h2 class="patients__title">
-            Отдел приема иностранных пациентов
-          </h2>
-          <p>
-            В своей практике он применяет передовые методы диагностики,
-            современные медицинские технологии и протоколы лечения, а также
-            высококачественные хирургические инструменты и высокоэффективные
-            лекарственные препараты.
-          </p>
-        </div>
-        <div class="patients__stages">
-          <h3 class="patients__stage-subtitle">
-            1. Выбор лучшего медицинского учреждения
-          </h3>
-          <p class="patients__stage-content">
-            Профессор Хаим Гутман сотрудничает с крупнейшими и наиболее
-            известными медицинскими клиниками в Израиле, в том числе
-            Тель-Авивский медицинский центр Ихилов (Сураски), медикал центр
-            «Герцлия», частная клиника «Рафаэль». Пациент может выбрать
-            лучшую клинику, опираясь на отзывы, рейтинги, изучив репутацию
-            мед учреждения, а также руководствуясь своим опытом и личными
-            впечатлениями. 
-          </p>
-          <h3 class="patients__stage-subtitle">
-            2. Планирование и организация поездки
-          </h3>
-          <div class="patients__stage-content">
-            <p>
-              Компания берет на себя решение всех организационных вопросов:
-            </p>
-            <ul class="patients__stage-list">
-              <li class="listitem">
-                <span>
-                  Помощь в оформлении визы и бронировании перелета.
-                </span>
-              </li>
-              <li class="listitem">
-                <span>
-                  Помощь в аренде жилья – бронирование отелей, поиск и
-                  аренда квартиры.
-                </span>
-              </li>
-              <li class="listitem">
-                <span>
-                  Трансфер – встреча в аэропорту, поездки в клинику.
-                </span>
-              </li>
-              <li class="listitem">
-                <span>
-                  Перевод медицинских документов.
-                </span>
-              </li>
-              <li class="listitem">
-                <span>
-                  Планирование консультаций, обследований, лечения.
-                </span>
-              </li>
-            </ul>
-            <p>
-              Мы готовы предложить вам индивидуальный пакет медицинского
-              обслуживания, полностью соответствующий вашим личным
-              пожеланиям и медицинским потребностям.
-            </p>
-          </div>
-          <h3 class="patients__stage-subtitle">
-            3. Консультация по прибытии в Израиль
-          </h3>
-          <p class="patients__stage-content">
-            Консультация с врачом проходит по приезду пациента в заранее
-            назначенное время. Для консультации у пациента должны быть на
-            руках анализы крови, включая определение опухолевых маркеров,
-            данные исследования гистологического материала, обзорная ПЭТ-КТ
-            или КТ трех областей, заключение от онколога (где пациент ранее
-            проходил обследование, лечение). На этом этапе происходит
-            обсуждение плана диагностики и лечения на основании имеющихся
-            результатов обследования и информации о текущем состоянии
-            пациента, его жалоб на момент обращения.
-          </p>
-          <h3 class="patients__stage-subtitle">
-            4. Лечение и реабилитация
-          </h3>
-          <p class="patients__stage-content">
-            Профессор Хаим Гутман использует ресурсы ведущих клиник для
-            диагностики, лечения и послеоперационного восстановления
-            пациента. Каждому пациенту будет обеспечен самый
-            профессиональный и качественный уход, назначен координатор,
-            который станет основным контактным лицом во время пребывания в
-            Израиле. Он будет сопровождать пациента на консультации и давать
-            качественный перевод врачу и пациенту, окажет всю необходимую
-            помощь и поддержку, будет контролировать своевременное
-            выполнение всех этапов лечения пациента и следить за соблюдением
-            его интересов.
-          </p>
-          <h3 class="patients__stage-subtitle align-end">
-            5. Обследование после курса лечения
-          </h3>
-          <p class="patients__stage-content no-border">
-            По завершении лечения врач дает пациенту все необходимые
-            выписки, заключения и рекомендации относительно дальнейшего
-            лечения, плановых обследований, реабилитации. Также пациент
-            может получить медицинскую помощь, консультативную поддержку
-            врача после возвращения домой.
-          </p>
-          <div class="patients__button-container">
-            <button class="btn btn-primary" type="button">
-              Записаться на Консультацию
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews -->
-    <section id="reviews" class="reviews">
-      <div class="container">
-        <h2>Отзывы</h2>
-        <div class="reviews__slider-container">
-          <button class="slider__btn slider__btn-prev slider__reviews-btn-prev"></button>
-          <div id="reviews-slider" class="slider reviews-slider">
-            <div>
-              <div class="review-card">
-                <p class="review-card__title">Успешное лечение РМЖ</p>
-                <p class="review-card__text">
-                  У меня обнаружили рак молочной железы на третьей стадии. С
-                  этого момента жизнь превратилась в борьбу, страх и страдания.
-                  Я сразу решила лечиться в Израиле. Мои поиски привели меня к
-                  лучшему из врачей – Хаиму Гутману. Считаю, что это была для
-                  меня судьбоносная встреча, благодаря которой я жива, я
-                  поборола рак и теперь могу жить полноценной жизнью. Со мной
-                  также работали и другие онкологи, маммологи, а также
-                  психологи, благодаря которым я смогла преодолеть свои страхи и
-                  депрессию.
-                </p>
-                <p class="review-card__author">Станислава, г. Москва</p>
+      <!-- Reviews -->
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <h2>Отзывы</h2>
+          <div class="reviews__slider-container">
+            <button
+              class="slider__btn slider__btn-prev slider__reviews-btn-prev"
+            ></button>
+            <div id="reviews-slider" class="slider reviews-slider">
+              <div>
+                <div class="review-card">
+                  <p class="review-card__title">Успешное лечение РМЖ</p>
+                  <p class="review-card__text">
+                    У меня обнаружили рак молочной железы на третьей стадии. С
+                    этого момента жизнь превратилась в борьбу, страх и
+                    страдания. Я сразу решила лечиться в Израиле. Мои поиски
+                    привели меня к лучшему из врачей – Хаиму Гутману. Считаю,
+                    что это была для меня судьбоносная встреча, благодаря
+                    которой я жива, я поборола рак и теперь могу жить
+                    полноценной жизнью. Со мной также работали и другие
+                    онкологи, маммологи, а также психологи, благодаря которым я
+                    смогла преодолеть свои страхи и депрессию.
+                  </p>
+                  <p class="review-card__author">Станислава, г. Москва</p>
+                </div>
+              </div>
+              <div>
+                <div class="review-card">
+                  <p class="review-card__title">Успешное лечение РМЖ</p>
+                  <p class="review-card__text">
+                    У меня обнаружили рак молочной железы на третьей стадии. С
+                    этого момента жизнь превратилась в борьбу, страх и
+                    страдания. Я сразу решила лечиться в Израиле. Мои поиски
+                    привели меня к лучшему из врачей – Хаиму Гутману. Считаю,
+                    что это была для меня судьбоносная встреча, благодаря
+                    которой я жива, я поборола рак и теперь могу жить
+                    полноценной жизнью. Со мной также работали и другие
+                    онкологи, маммологи, а также психологи, благодаря которым я
+                    смогла преодолеть свои страхи и депрессию.
+                  </p>
+                  <p class="review-card__author">Станислава, г. Москва</p>
+                </div>
+              </div>
+              <div>
+                <div class="review-card">
+                  <p class="review-card__title">Успешное лечение РМЖ</p>
+                  <p class="review-card__text">
+                    У меня обнаружили рак молочной железы на третьей стадии. С
+                    этого момента жизнь превратилась в борьбу, страх и
+                    страдания. Я сразу решила лечиться в Израиле. Мои поиски
+                    привели меня к лучшему из врачей – Хаиму Гутману. Считаю,
+                    что это была для меня судьбоносная встреча, благодаря
+                    которой я жива, я поборола рак и теперь могу жить
+                    полноценной жизнью. Со мной также работали и другие
+                    онкологи, маммологи, а также психологи, благодаря которым я
+                    смогла преодолеть свои страхи и депрессию.
+                  </p>
+                  <p class="review-card__author">Станислава, г. Москва</p>
+                </div>
               </div>
             </div>
-            <div>
-              <div class="review-card">
-                <p class="review-card__title">Успешное лечение РМЖ</p>
-                <p class="review-card__text">
-                  У меня обнаружили рак молочной железы на третьей стадии. С
-                  этого момента жизнь превратилась в борьбу, страх и страдания.
-                  Я сразу решила лечиться в Израиле. Мои поиски привели меня к
-                  лучшему из врачей – Хаиму Гутману. Считаю, что это была для
-                  меня судьбоносная встреча, благодаря которой я жива, я
-                  поборола рак и теперь могу жить полноценной жизнью. Со мной
-                  также работали и другие онкологи, маммологи, а также
-                  психологи, благодаря которым я смогла преодолеть свои страхи и
-                  депрессию.
-                </p>
-                <p class="review-card__author">Станислава, г. Москва</p>
-              </div>
-            </div>
-            <div>
-              <div class="review-card">
-                <p class="review-card__title">Успешное лечение РМЖ</p>
-                <p class="review-card__text">
-                  У меня обнаружили рак молочной железы на третьей стадии. С
-                  этого момента жизнь превратилась в борьбу, страх и страдания.
-                  Я сразу решила лечиться в Израиле. Мои поиски привели меня к
-                  лучшему из врачей – Хаиму Гутману. Считаю, что это была для
-                  меня судьбоносная встреча, благодаря которой я жива, я
-                  поборола рак и теперь могу жить полноценной жизнью. Со мной
-                  также работали и другие онкологи, маммологи, а также
-                  психологи, благодаря которым я смогла преодолеть свои страхи и
-                  депрессию.
-                </p>
-                <p class="review-card__author">Станислава, г. Москва</p>
-              </div>
-            </div>
-          </div>
-          <button class="slider__btn slider__btn-next slider__reviews-btn-next"></button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Partners -->
-    <section id="partners" class="partners">
-      <div class="container">
-        <div class="partners__title-container">
-          <h2>Партнёры</h2>
-          <div class="slider__btn-group">
-            <button class="slider__btn slider__btn-prev slider__partners-btn-prev"></button>
-            <button class="slider__btn slider__btn-next slider__partners-btn-next"></button>
+            <button
+              class="slider__btn slider__btn-next slider__reviews-btn-next"
+            ></button>
           </div>
         </div>
+      </section>
 
-        <div class="partners__slider-container">
-          <div id="partners-slider" class="slider partners-slider">
-            <div>
-              <a class="partners__link" href="https://herzliya-clinic.com/" target="_blank">
+      <!-- Partners -->
+      <section id="partners" class="partners">
+        <div class="container">
+          <div class="partners__title-container">
+            <h2>Партнёры</h2>
+            <div class="slider__btn-group">
+              <button
+                class="slider__btn slider__btn-prev slider__partners-btn-prev"
+              ></button>
+              <button
+                class="slider__btn slider__btn-next slider__partners-btn-next"
+              ></button>
+            </div>
+          </div>
+
+          <div class="partners__slider-container">
+            <div id="partners-slider" class="slider partners-slider">
+              <div>
+                <a
+                  class="partners__link"
+                  href="https://herzliya-clinic.com/"
+                  target="_blank"
+                >
+                  <div class="partner-card">
+                    <img src="./assets/images/logo-herzliya.png" alt="" />
+                    <div class="partner-card__label-container">
+                      <p class="partner-card__name">
+                        Медицинский центр Герцлия
+                      </p>
+                      <p class="partner-card__location">Герцлия, Израиль</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  class="partners__link"
+                  href="https://www.raphaelhospitals.co.il/ru/"
+                  target="_blank"
+                >
+                  <div class="partner-card">
+                    <img src="./assets/images/logo-rafael.png" alt="" />
+                    <div class="partner-card__label-container">
+                      <p class="partner-card__name">Больница Рафаэль</p>
+                      <p class="partner-card__location">Тель-Авив, Израиль</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  class="partners__link"
+                  href="https://ichilov-clinic.gov.il/ru/"
+                  target="_blank"
+                >
+                  <div class="partner-card">
+                    <img src="./assets/images/logo-sourasky.png" alt="" />
+                    <div class="partner-card__label-container">
+                      <p class="partner-card__name">Медицинский центр Ихилов</p>
+                      <p class="partner-card__location">Тель-Авив, Израиль</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  class="partners__link"
+                  href="https://assutahospital.org/"
+                  target="_blank"
+                >
+                  <div class="partner-card">
+                    <img src="./assets/images/logo-assuta.png" alt="" />
+                    <div class="partner-card__label-container">
+                      <p class="partner-card__name">Госпиталь Ассута</p>
+                      <p class="partner-card__location">Тель-Авив, Израиль</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div>
                 <div class="partner-card">
                   <img src="./assets/images/logo-herzliya.png" alt="" />
                   <div class="partner-card__label-container">
-                    <p class="partner-card__name">Медицинский центр Герцлия</p>
-                    <p class="partner-card__location">Герцлия, Израиль</p>
+                    <p class="partner-card__name">Еще партнер</p>
+                    <p class="partner-card__location">Место</p>
                   </div>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a class="partners__link" href="https://www.raphaelhospitals.co.il/ru/" target="_blank">
-                <div class="partner-card">
-                  <img src="./assets/images/logo-rafael.png" alt="" />
-                  <div class="partner-card__label-container">
-                    <p class="partner-card__name">Больница Рафаэль</p>
-                    <p class="partner-card__location">Тель-Авив, Израиль</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a class="partners__link" href="https://ichilov-clinic.gov.il/ru/" target="_blank">
-                <div class="partner-card">
-                  <img src="./assets/images/logo-sourasky.png" alt="" />
-                  <div class="partner-card__label-container">
-                    <p class="partner-card__name">Медицинский центр Ихилов</p>
-                    <p class="partner-card__location">Тель-Авив, Израиль</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a class="partners__link" href="https://assutahospital.org/" target="_blank">
-                <div class="partner-card">
-                  <img src="./assets/images/logo-assuta.png" alt="" />
-                  <div class="partner-card__label-container">
-                    <p class="partner-card__name">Госпиталь Ассута</p>
-                    <p class="partner-card__location">Тель-Авив, Израиль</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div>
-              <div class="partner-card">
-                <img src="./assets/images/logo-herzliya.png" alt="" />
-                <div class="partner-card__label-container">
-                  <p class="partner-card__name">Еще партнер</p>
-                  <p class="partner-card__location">Место</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Certificates -->
-    <section id="certificates" class="certificates">
+      <!-- Certificates -->
+      <section id="certificates" class="certificates">
+        <div class="container">
+          <div class="certificates__title-container">
+            <h2>Сертификаты</h2>
+            <div class="slider__btn-group">
+              <button
+                class="slider__btn slider__btn-prev slider__certificates-btn-prev"
+              ></button>
+              <button
+                class="slider__btn slider__btn-next slider__certificates-btn-next"
+              ></button>
+            </div>
+          </div>
+
+          <div class="modal" id="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="full-image" />
+          </div>
+
+          <div class="certificates__slider-container">
+            <div id="certificates-slider" class="slider certificates-slider">
+              <div>
+                <div class="certificate-card">
+                  <div class="certificate-card__img-container">
+                    <img src="./assets/images/certificate-temp-1.png" alt="" />
+                    <div class="zoom-icon">
+                      <img src="./assets/images/Search.png" alt="Лупа" />
+                    </div>
+                  </div>
+                  <p class="certificate-card__label">
+                    Лицензия на предоставление медицинских услуг
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="certificate-card">
+                  <div class="certificate-card__img-container">
+                    <img src="./assets/images/certificate-temp-2.png" alt="" />
+                    <div class="zoom-icon">
+                      <img src="./assets/images/Search.png" alt="Лупа" />
+                    </div>
+                  </div>
+                  <p class="certificate-card__label">
+                    Лицензия на предоставление медицинских услуг
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="certificate-card">
+                  <div class="certificate-card__img-container">
+                    <img src="./assets/images/certificate-temp-2.png" alt="" />
+                    <div class="zoom-icon">
+                      <img src="./assets/images/Search.png" alt="Лупа" />
+                    </div>
+                  </div>
+                  <p class="certificate-card__label">
+                    Лицензия на предоставление медицинских услуг
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="certificate-card">
+                  <div class="certificate-card__img-container">
+                    <img src="./assets/images/certificate-temp-1.png" alt="" />
+                    <div class="zoom-icon">
+                      <img src="./assets/images/Search.png" alt="Лупа" />
+                    </div>
+                  </div>
+                  <p class="certificate-card__label">
+                    Лицензия на предоставление медицинских услуг
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="certificate-card">
+                  <div class="certificate-card__img-container">
+                    <img src="./assets/images/certificate-temp-1.png" alt="" />
+                    <div class="zoom-icon">
+                      <img src="./assets/images/Search.png" alt="Лупа" />
+                    </div>
+                  </div>
+                  <p class="certificate-card__label">
+                    Лицензия на предоставление медицинских услуг
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacts -->
+      <section id="contacts" class="contacts">
+        <div class="contacts__container container">
+          <div class="contacts__contact-info">
+            <h2 class="contacts__title">Контакты</h2>
+            <div class="contacts__content">
+              <div>
+                <ul class="contacts__main-list">
+                  <li class="section-contact-li">
+                    <p class="text-label">Телефон</p>
+                    <a class="contacts__link" href="">+380 (99) 123 44 55</a>
+                  </li>
+                  <li class="section-contact-li">
+                    <p class="text-label">Почта</p>
+                    <a class="contacts__link" href="">doctor@haimgutman.com</a>
+                  </li>
+                  <li class="section-contact-li">
+                    <p class="text-label">Поддержка</p>
+                    <a class="contacts__link" href="">support@haimgutman.com</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts__socials">
+                <p class="text-label">Мессенджеры</p>
+                <ul class="contacts__socials-list">
+                  <li class="contacts__socials-listitem">
+                    <a class="contacts__socials-link" href="">
+                      <img
+                        class="contacts__socials-icon"
+                        src="./assets/images/svg/WhatsApp.svg"
+                        alt=""
+                      />
+                      <span class="contacts__socials-name">WhatsApp</span>
+                    </a>
+                  </li>
+                  <li class="contacts__socials-listitem">
+                    <a class="contacts__socials-link" href="">
+                      <img
+                        class="contacts__socials-icon"
+                        src="./assets/images/svg/Telegram.svg"
+                        alt=""
+                      />
+                      <span class="contacts__socials-name">Telegram</span>
+                    </a>
+                  </li>
+                  <li class="contacts__socials-listitem">
+                    <a class="contacts__socials-link" href="">
+                      <img
+                        class="contacts__socials-icon"
+                        src="./assets/images/svg/Viber.svg"
+                        alt=""
+                      />
+                      <span class="contacts__socials-name">Viber</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169325.14861847594!2d34.835549164703274!3d48.46218085014401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd08468f%3A0xa1cf3d5f2c11aba!2z0JTQvdC10L_RgCwg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDQ5MDAw!5e0!3m2!1sru!2sua!4v1708170896264!5m2!1sru!2sua"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
       <div class="container">
-        <div class="certificates__title-container">
-          <h2>Сертификаты</h2>
-          <div class="slider__btn-group">
-            <button class="slider__btn slider__btn-prev slider__certificates-btn-prev"></button>
-            <button class="slider__btn slider__btn-next slider__certificates-btn-next"></button>
+        <div class="footer__content">
+          <div class="footer__content-main">
+            <div class="footer-contact-button-position">
+              <img src="./assets/images/svg/logo-white.svg" alt="" />
+            </div>
+            <p class="text-label footer__license-text">
+              Лицензия на предоставление услуг номер #494853 от 21.09.2009
+              министерства услуг и медицины Израиля
+            </p>
           </div>
-        </div>
-
-        <div class="certificates__slider-container">
-          <div id="certificates-slider" class="slider certificates-slider">
+          <div class="footer__content-contact">
             <div>
-              <div class="certificate-card">
-                <div class="certificate-card__img-container">
-                  <img src="./assets/images/certificate-temp-1.png" alt="" />
-                </div>
-                <p class="certificate-card__label">
-                  Лицензия на предоставление медицинских услуг
-                </p>
-              </div>
-            </div>
-            <div>
-              <div class="certificate-card">
-                <div class="certificate-card__img-container">
-                  <img src="./assets/images/certificate-temp-2.png" alt="" />
-                </div>
-                <p class="certificate-card__label">
-                  Лицензия на предоставление медицинских услуг
-                </p>
-              </div>
-            </div>
-            <div>
-              <div class="certificate-card">
-                <div class="certificate-card__img-container">
-                  <img src="./assets/images/certificate-temp-2.png" alt="" />
-                </div>
-                <p class="certificate-card__label">
-                  Лицензия на предоставление медицинских услуг
-                </p>
-              </div>
-            </div>
-            <div>
-              <div class="certificate-card">
-                <div class="certificate-card__img-container">
-                  <img src="./assets/images/certificate-temp-1.png" alt="" />
-                </div>
-                <p class="certificate-card__label">
-                  Лицензия на предоставление медицинских услуг
-                </p>
-              </div>
-            </div>
-            <div>
-              <div class="certificate-card">
-                <div class="certificate-card__img-container">
-                  <img src="./assets/images/certificate-temp-1.png" alt="" />
-                </div>
-                <p class="certificate-card__label">
-                  Лицензия на предоставление медицинских услуг
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contacts -->
-    <section id="contacts" class="contacts">
-      <div class="contacts__container container">
-        <div class="contacts__contact-info">
-          <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__content">
-            <div>
-              <ul class="contacts__main-list">
-                <li class="section-contact-li">
+              <h4 class="footer__subtitle">Контакты</h4>
+              <ul class="footer__list">
+                <li>
                   <p class="text-label">Телефон</p>
-                  <a class="contacts__link" href="">+380 (99) 123 44 55</a>
+                  <a class="footer__contact-link" href="">
+                    +380 (99) 123 44 55
+                  </a>
                 </li>
-                <li class="section-contact-li">
+                <li>
                   <p class="text-label">Почта</p>
-                  <a class="contacts__link" href="">doctor@haimgutman.com</a>
+                  <a class="footer__contact-link" href="">
+                    doctor@haimgutman.com
+                  </a>
                 </li>
-                <li class="section-contact-li">
+                <li>
                   <p class="text-label">Поддержка</p>
-                  <a class="contacts__link" href="">support@haimgutman.com</a>
-                </li>
-              </ul>
-            </div>
-            <div class="contacts__socials">
-              <p class="text-label">Мессенджеры</p>
-              <ul class="contacts__socials-list">
-                <li class="contacts__socials-listitem">
-                  <a class="contacts__socials-link" href="">
-                    <img class="contacts__socials-icon" src="./assets/images/svg/WhatsApp.svg" alt="" />
-                    <span class="contacts__socials-name">WhatsApp</span>
-                  </a>
-                </li>
-                <li class="contacts__socials-listitem">
-                  <a class="contacts__socials-link" href="">
-                    <img class="contacts__socials-icon" src="./assets/images/svg/Telegram.svg" alt="" />
-                    <span class="contacts__socials-name">Telegram</span>
-                  </a>
-                </li>
-                <li class="contacts__socials-listitem">
-                  <a class="contacts__socials-link" href="">
-                    <img class="contacts__socials-icon" src="./assets/images/svg/Viber.svg" alt="" />
-                    <span class="contacts__socials-name">Viber</span>
+                  <a class="footer__contact-link" href="">
+                    support@haimgutman.com
                   </a>
                 </li>
               </ul>
             </div>
+            <div>
+              <h4 class="footer__subtitle">Социальные сети</h4>
+              <ul class="footer__socials-list">
+                <li class="footer__socials-listitem">
+                  <a class="footer__socials-link" href="">
+                    <img
+                      class="footer__socials-icon"
+                      src="./assets/images/svg/whatsapp-white.svg"
+                      alt=""
+                    />
+                    <span class="footer__socials-name">WhatsApp</span>
+                  </a>
+                </li>
+                <li class="footer__socials-listitem">
+                  <a class="footer__socials-link" href="">
+                    <img
+                      class="footer__socials-icon"
+                      src="./assets/images/svg/instagram-white.svg"
+                      alt=""
+                    />
+                    <span class="footer__socials-name">Instagram</span>
+                  </a>
+                </li>
+                <li class="footer__socials-listitem">
+                  <a class="footer__socials-link" href="">
+                    <img
+                      class="footer__socials-icon"
+                      src="./assets/images/svg/facebook-white.svg"
+                      alt=""
+                    />
+                    <span class="footer__socials-name">Facebook</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="contacts__map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169325.14861847594!2d34.835549164703274!3d48.46218085014401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd08468f%3A0xa1cf3d5f2c11aba!2z0JTQvdC10L_RgCwg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDQ5MDAw!5e0!3m2!1sru!2sua!4v1708170896264!5m2!1sru!2sua"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__content">
-        <div class="footer__content-main">
-          <div class="footer-contact-button-position">
-            <img src="./assets/images/svg/logo-white.svg" alt="" />
-          </div>
-          <p class="text-label footer__license-text">
-            Лицензия на предоставление услуг номер #494853 от 21.09.2009
-            министерства услуг и медицины Израиля
-          </p>
-        </div>
-        <div class="footer__content-contact">
-          <div>
-            <h4 class="footer__subtitle">Контакты</h4>
-            <ul class="footer__list">
-              <li>
-                <p class="text-label">Телефон</p>
-                <a class="footer__contact-link" href="">
-                  +380 (99) 123 44 55
-                </a>
-              </li>
-              <li>
-                <p class="text-label">Почта</p>
-                <a class="footer__contact-link" href="">
-                  doctor@haimgutman.com
-                </a>
-              </li>
-              <li>
-                <p class="text-label">Поддержка</p>
-                <a class="footer__contact-link" href="">
-                  support@haimgutman.com
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="footer__subtitle">Социальные сети</h4>
-            <ul class="footer__socials-list">
-              <li class="footer__socials-listitem">
-                <a class="footer__socials-link" href="">
-                  <img class="footer__socials-icon" src="./assets/images/svg/whatsapp-white.svg" alt="" />
-                  <span class="footer__socials-name">WhatsApp</span>
-                </a>
-              </li>
-              <li class="footer__socials-listitem">
-                <a class="footer__socials-link" href="">
-                  <img class="footer__socials-icon" src="./assets/images/svg/instagram-white.svg" alt="" />
-                  <span class="footer__socials-name">Instagram</span>
-                </a>
-              </li>
-              <li class="footer__socials-listitem">
-                <a class="footer__socials-link" href="">
-                  <img class="footer__socials-icon" src="./assets/images/svg/facebook-white.svg" alt="" />
-                  <span class="footer__socials-name">Facebook</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="footer__rights">
+          <p class="text-label">Все права защищены (с) 2024</p>
+          <p class="text-label">Политика конфиденциальности</p>
         </div>
       </div>
-      <div class="footer__rights">
-        <p class="text-label">Все права защищены (с) 2024</p>
-        <p class="text-label">Политика конфиденциальности</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <div class="backdrop"></div>
+    <div class="backdrop"></div>
 
-  <script src="./js/jquery-3.7.1.min.js"></script>
-  <script src="./js/slick-1.8.1.min.js"></script>
-  <script src="./js/header-scroll.js"></script>
-  <script src="./js/nav-burger.js"></script>
-  <script src="./js/sliders.js"></script>
-</body>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/slick-1.8.1.min.js"></script>
+    <script src="./js/header-scroll.js"></script>
+    <script src="./js/nav-burger.js"></script>
+    <script src="./js/sliders.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var modal = document.getElementById("modal");
+        var img = document.getElementById("full-image");
+        var zoomIcon = document.querySelector(".zoom-icon");
+        var close = document.querySelector(".close");
 
+        zoomIcon.addEventListener("click", function () {
+          modal.style.display = "flex";
+          img.src = this.previousElementSibling.src;
+        });
+
+        close.addEventListener("click", function () {
+          modal.style.display = "none";
+        });
+
+        window.addEventListener("click", function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
