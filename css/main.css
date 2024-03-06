@@ -520,7 +520,7 @@
   flex-grow: 1;
 }
 
-.certificate-card__img-container > img {
+.certificate-card__img-container img {
   max-width: 200px;
   max-height: 200px;
   align-self: center;
