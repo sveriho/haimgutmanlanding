@@ -30,6 +30,7 @@
   width: 32px;
   height: 32px;
   background-image: url('../assets/images/svg/menu.svg');
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
@@ -511,6 +512,10 @@
   gap: 16px;
   border: 2px solid var(--color-gray-100);
   border-radius: 16px;
+}
+
+.certificate-card__img-container > a {
+  cursor: pointer;
 }
 
 .certificate-card__img-container {
