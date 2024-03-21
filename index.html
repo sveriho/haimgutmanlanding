@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/modal.css">
 
   <link rel="stylesheet" href="css/slick-1.8.1.css">
   <link rel="stylesheet" href="css/slick-theme-1.8.1.css">
@@ -88,7 +89,7 @@
               хирургов мамологов и онкодерматологов.
             </p>
             <div class="btn-group">
-              <button class="btn btn-primary" type="button">
+              <button class="btn btn-primary" type="button" onclick="openModal()">
                 Записаться на Консультацию
               </button>
               <a href="#about">
@@ -192,7 +193,7 @@
             </li>
           </ul>
           <div class="about-details__btn-container">
-            <button class="btn btn-primary" type="button">
+            <button class="btn btn-primary" type="button" onclick="openModal()">
               Записаться на Консультацию
             </button>
           </div>
@@ -594,6 +595,38 @@
     </div>
   </footer>
 
+  <!-- Модальное окно -->
+  <div id="sign-up-modal" class="modal">
+    <div class="modal-content">
+      <button class="close" onclick="closeModal()"></button>
+      <h2 class="modal-title">Оставить заявку</h2>
+      <form class="modal-form" id="form" novalidate>
+        <fieldset class="modal-form__field">
+          <label for="name">Ваше имя*</label>
+          <input class="modal-form__input" type="text" id="name" name="name" placeholder="Ваше имя" onblur="validate('name')" />
+          <span id="nameError" class="inline-error"></span>
+        </fieldset>
+        <fieldset class="modal-form__field">
+          <label for="email">Электронная почта*</label>
+          <input class="modal-form__input" type="text" id="email" name="email" placeholder="yourmail@gmail.com" onblur="validate('email')" />
+          <span id="emailError" class="inline-error"></span>
+        </fieldset>
+        <fieldset class="modal-form__field">
+          <label for="phone">Телефон*</label>
+          <input class="modal-form__input" type="tel" id="phone" placeholder="+972548210051" name="phone" onblur="validate('phone')" />
+          <span id="phoneError" class="inline-error"></span>
+        </fieldset>
+        <div class="modal-form__footer">
+          <p class="policy">
+            <span>Заполняя данную форму вы соглашаетесь с</span>
+            <a href="#">политикой конфиденциальности</a>
+          </p>
+          <button id="form-submit-btn" class="btn btn-primary" type="button" disabled="isDisabled()" onclick="onSubmit()">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <div class="backdrop"></div>
 
   <script src="./js/jquery-3.7.1.min.js"></script>
@@ -603,6 +636,7 @@
   <script src="./js/sliders.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="./js/fancybox-config.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
