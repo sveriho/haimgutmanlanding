@@ -21,7 +21,7 @@
 }
 
 .header__burger {
-  width: 220px;
+  width: 136px;
   display: none;
   z-index: 50;
 }
@@ -97,6 +97,7 @@
 
 .lang-selector {
   padding: 10px 14px;
+  display: none;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 20px;
@@ -284,78 +285,11 @@
 
 /* End Services Section */
 
-/* Start Patients Section */
-
-.patients {
-  padding: 80px 0;
-  background-color: var(--color-gray-bg);
-}
-
-.patients p {
-  font-size: 15px;
-  line-height: 160%;
-}
-
-.patients__container {
-  display: flex;
-  gap: 50px;
-}
-
-.patients__common {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.patients__stage-subtitle {
-  margin-left: 15px;
-  padding-left: 30px;
-  display: flex;
-  position: relative;
-  border-left: 3px solid var(--color-primary);
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 180%;
-}
-
-.patients__stage-subtitle::before {
-  content: url('../assets/images/svg/circle.svg');
-  margin-right: 15px;
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  left: -17.5px;
-  background-color: var(--color-gray-bg);
-}
-
-.patients__stage-content {
-  margin-left: 15px;
-  padding-left: 30px;
-  padding-bottom: 20px;
-  border-left: 3px solid var(--color-primary);
-}
-
-.patients__stage-content.no-border {
-  border-left: none;
-}
-
-.patients__stage-list {
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.patients__button-container {
-  padding-left: 45px;
-}
-
-/* End Patiens Section */
-
 /* Start Reviews Section */
 
 .reviews {
   padding: 60px 25px;
+  background-color: var(--color-contacts-bg);
 }
 
 .reviews__slider-container {
@@ -396,82 +330,6 @@
 }
 
 /* End Reviews Section */
-
-/* Start Partners Section */
-
-.partners {
-  padding: 60px 0;
-}
-
-.partners__title-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.partners__slider-container {
-  margin-top: 30px;
-}
-
-.partners-slider {
-  width: 100%;
-}
-
-.partners-slider .slick-list {
-  padding-bottom: 20px;
-}
-
-.partners-slider .slick-track {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-}
-
-.partners__link {
-  color: var(--color-black);
-  text-decoration: none;
-}
-
-.partner-card {
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  border: 2px solid var(--color-gray-100);
-  border-radius: 16px;
-}
-
-.partner-card > img {
-  max-width: 200px;
-  max-height: 200px;
-  align-self: center;
-}
-
-.partner-card__label-container {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.partner-card__name {
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 160%;
-}
-
-.partner-card__location {
-  display: inline-flex;
-  gap: 5px;
-  color: var(--color-gray);
-  font-size: 14px;
-  line-height: 160%;
-}
-
-.partner-card__location::before {
-  content: url('../assets/images/svg/pin.svg');
-}
-
-/* End Partners Section */
 
 /* Start Certificates Section */
 
@@ -630,11 +488,8 @@ footer {
 .footer__content-main {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
-}
-
-.footer__license-text {
-  width: 273px;
 }
 
 .footer__content-contact {
@@ -697,24 +552,6 @@ footer {
 }
 
 /* End Footer */
-
-@media only screen and (max-width: 1199px) {
-  /* Start Header section */
-
-  .header__logo {
-    width: 120px;
-  }
-
-  .header__nav-list {
-    gap: 15px;
-  }
-
-  .header__nav-link {
-    font-size: 13px;
-  }
-
-  /* End Header section */
-}
 
 @media only screen and (max-width: 991px) {
   /* Start Header section */
@@ -849,18 +686,6 @@ footer {
 
   /* End Services Section */
 
-  /* Start Patiens Section */
-
-  .patients {
-    padding: 70px 0;
-  }
-
-  .patients__container {
-    flex-direction: column;
-  }
-
-  /* End Patiens Section */
-
   /* Start Reviews Section */
 
   .reviews__slider-container > .slider {
@@ -911,10 +736,6 @@ footer {
     padding-bottom: 30px;
     flex-direction: column;
     gap: 24px;
-  }
-
-  .footer__license-text {
-    width: 100%;
   }
 
   .footer__rights {
@@ -1029,22 +850,6 @@ footer {
   }
 
   /* End About Details Section */
-
-  /* Start Patients Section */
-
-  .patients {
-    padding: 60px 0;
-  }
-
-  .patients__button-container {
-    padding-left: 0;
-  }
-
-  .patients__button-container > button {
-    width: 100%;
-  }
-
-  /* End Patients Section */
 
   /* Start Contacts Section */
 
